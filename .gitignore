@@ -1,0 +1,9 @@
+jpg/
+macros.tex~
+*.aux
+*.dvi
+mainfile.idx
+mainfile.log
+mainfile.ps
+mainfile.tex~
+mainfile.toc
