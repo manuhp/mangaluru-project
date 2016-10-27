@@ -1,0 +1,376 @@
+% helper macros
+
+\chapter{Introduction}\label{chap1}
+
+%\addtocontents{toc}{\protect\bigskip\centerline{\underline{\textbf{Module  - I}}}} 
+\addtocontents{toc}{\protect\contentsline{chapter}{\protect Chapter \numberline{\thechapter.}
+  Introduction}{\thepage--\pageref{1end}}}  
+
+\section{Definitions of a Signal}\label{sec1.1}
+
+A signal can be defined as a function that conveys {\em information}. Although signals can be represented in many ways, in all cases the information is contained in some pattern of variations. Signals are represented mathematically as a function of one or more independent variables. If the function depends on a single variable, the signal is said to be {\em one dimensional}. Eg., Speech signal. A speech signal is represented mathematically as a function of time wherein the amplitude varies with time depending on the spoken word and the person who speaks it. If the function depends on two or more variables, the signal is said to be {\em multidimensional}. Eg., Image signal. A photographic image is represented as a brightness function of two special variables.
+
+Usually the independent variable of the mathematical representation of a signal is taken as {\em time}. But in some specific cases the independent variable may not be time.
+
+\noindent
+{\bf Real-Life examples for signals}
+\smallskip
+
+In this section, we have discussed few examples for real-life signals.
+\begin{itemize}
+\item[(a)] By listening to the heart-beat of a patient, a doctor is able to diagnose the presence or absence of disease. The quantity (heart-beat) represents signal that convey information to the doctor about the state of health of the patient.
+
+\item[(b)] In listening to a weather forecast over the radio, we get quantities regarding variations in temperature, humidity, the speed of wind etc. The signals represented by these quantities help us to decide whether to go out for a walk or not.
+\end{itemize}
+
+Basically there are two types of signals. (i) Continuous-time signal and (ii) Discrete-time signal.
+
+\medskip
+\noindent
+{\bf (i) Continuous-time signal}
+\smallskip
+
+A signal $x(\rmt)$ is said to be a {\em continuous-time signal} if it has value of amplitude for all time `t' (i.e., the independent variable `t' is continuous). Fig. \ref{chap1-fgig1.1} represents an example of a continuous-time signal whose amplitude varies continuously with time. Continuous-time signals arise naturally when a physical phenomenon (eg., heart-beta, acoustic pressure variation etc.) is converted into an electrical signal using appropriate transducer.
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig1.eps}
+\caption{A continuos time signal}\label{chap1-fig1.1}
+\end{figure}
+
+\medskip
+\noindent
+{\bf (ii) Discrete-time signal}
+\smallskip
+
+A discrete-time signal is defined only at discrete instants of time. (i.e. the independent variable has discrete values only which are usually uniformly spaced)
+
+A discrete-time signals are represented mathematically as sequence of numbers. A sequence of numbers $x$ in which the $\rmn^{\text{th}}$ number in the sequence is denoted by $x(\rmn)$ is written as,
+$$
+x=\{x(\rmn)\}\quad ;~ -\infty<\rmn<\infty
+$$
+where `$\rmn$' is an {\em integer}.
+
+Practically, such sequences are usually obtained from a continuous - time signal by sampling it at a uniform rate.
+
+Consider `$\tau$' is the sampling period and `$n$' denote an integer $(-\infty<\rmn<\infty)$. Sampling a continuous-time signal $x(\rmt)$ at time $\rmt=\rmn\tau$ gives a sample value $x(\rmn\tau)$. We write this sampled signal as $x(\rmn)$ such that,
+$$
+x(\rmn)=x(\rmn\tau)\quad ;~ \rmn=0, \ \pm 1, \ \pm 2, \ \pm 3,\ldots
+$$
+
+Thus a discrete-time signal is represented by a sequence numbers $\ldots x(-2)$, $x(-1)$, $x(0)$, $x(1)$, $x(2)\ldots$.
+
+Fig. \ref{chap1-fig1.2}(a) and (b) illustrates the relationship between a continuous-time signal $x(\rmt)$ and discrete-time signal $x(\rmn)$ derived from it.
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig2.eps}
+
+\bigskip
+
+\includegraphics{src/chap1/fig3.eps}
+\caption{Discrete time signal $x(\rmn)$ obtained from a continuous-time signal $x(\rmt)$ with sampling perior `t'}\label{chap1-fig1.2}
+\end{figure}
+
+\section{Definitions of a System}
+
+A {\em system} is an interacting group of physical objects or physical conditions that are called system {\em components}. A physical system is an interconnection of components, devices or subsystems.
+
+Signals that enter a system from some external source are referred to as {\em input signals}. Signals produced by the system by processing the input signals are called the {\em output signals} or {\em responses}. Signals that occur within a system and therefore are neither input nor output signals are called {\em internal signals}. The system responds to one or more input signals to produce one or more output signals. These signals are functions of an independent variable such as time, distance etc.
+
+Many systems are quite complex. They may contain system components and signals of different types. For example, an audio amplifier system contains microphone that convert acoustic signals to electrical signals, amplifier that amplify the electrical signals and speakers that convert electrical signals to acoustic signals.
+
+A {\em continuous time system} is one where continuous time input signals are applied which results in continuous time output signals. It can be represented pictorially as shown in Fig. \ref{chap1-fig1.3}.
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig4.eps}
+\caption{A representation for continuous-time system}\label{chap1-fig1.3}
+\end{figure}
+where $x(\rmt)$ is the input signal and $y(\rmt)$ is the output signal.
+
+Alternatively, we can represent the input-output relation of a continuous time system by the notation as written below.
+$$
+x(\rmt)\to y(\rmt)
+$$
+
+Similarly, a {\em discrete-time system} is one where discrete-time input signals are applied which results in discrete-time output signals. It can be represented pictorially as shown in Fig. \ref{chap1-fig1.4}.
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig5.eps}
+\caption{A representation for discrete-time system}\label{chap1-fig1.4}
+\end{figure}
+where $x(\rmn)$ is the input signal and $y(\rmn)$ is the output signal.
+
+Alternatively, we can represent the input and output relation of a discrete-time system by the notation as written below.
+$$
+x(\rmn)\to y(\rmn)
+$$
+
+Examples for systems
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig6.eps}
+\caption{Automatic speaker recognition system}\label{chap1-fig1.5}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig7.eps}
+\caption{Communication system}\label{chap1-fig1.6}
+\end{figure}
+
+
+\eject
+
+\noindent
+{\bf Real-Life Examples for Systems}
+\smallskip
+
+In this section, we will discuss some of the real-life systems in brief.
+
+\bigskip
+\noindent
+{\it\bfseries 1. Communication Systems :}
+\smallskip
+
+The three basic elements of communication system are (i) Transmitter (ii) Channel (iii) Receiver as shown in Fig. \ref{chap1-fig1.6}. The {\em transmitter} and {\em receiver} are places at a distance apart which are connected by a physical medium called {\em channel}. The channel may be free space, optical fiber, co-axial cable etc. The transmitter converts the message signal (eg., speech signal, video signal etc.) produced by a source of information into a form suitable for transmission over the channel. When the transmitted signal travels through the channel it would be distorted due to the physical characteristics of the channel. In addition to this, noise and interfering signals originating from other sources contaminate the message signals. The receiver receives the distorted signal to reconstruct it into a recognizable form or into an estimated form of the original message signal.
+
+Thus, the receiver does the reverse process that of transmitter and also reverses the effect of the channel such as noise elimination, amplification of weak signals etc.
+
+\bigskip
+\noindent
+{\it\bfseries 2. Control Systems :}
+\smallskip
+
+Fig. \ref{chap1-fig1.7} shows the block diagram representation of a closed-loop control system or feedback control system.
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig8.eps}
+\caption{Block diagram of closed loop control system}\label{chap1-fig1.7}
+\end{figure}
+
+In any control system, the plant is represented by mathematical operations that generate the output $y(\rmt)$ in response to the plant input $v(\rmt)$ and the external disturbance $d(\rmt)$. The sensors existing in the feedback loop measures the plant output $y(\rmt)$ and converts it into another form $\beta(\rmt)$ known as {\em feedback signal}. It is compared against the reference input $x(\rmt)$ to produce an {\em error signal} $e(\rmt)$. This error signal is applied to a controller which in turn produces the {\em actuating signal} $v(\rmt)$ that performs the controlling action of the plant.
+
+For example, in an aircraft landing system, the plant is represented by the aircraft body and actuator. The sensors are used by the pilot to determine the lateral position of the aircraft and the controller is a digital computer.
+
+\bigskip
+\noindent
+{\it\bfseries 3. Remote Sensing Systems :}
+\smallskip
+
+Remote sensing is defined as the process of acquiring informations about and object of interest without being in physical contact with it. The acquisition of informations is accomplished by detecting and measuring the changes that the object creates on the surrounding field. This field may be electromagnetic, acoustic, magnetic etc.
+
+The acquisition of informations can be done in a passive manner by listening to the field that is naturally emitted by the object and processing it or by purposely illuminating the object with a defined field and processing the echo.
+
+\section{Elementary Continuous-Time Signals}\label{chap1-sec1.3}
+
+The {\em elementary} of {\em basic} signals occur frequently in nature. These signals are the basic building blocks for constructing more complex signals. Many physical signals that occur in nature can be modelled using these elementary signals.
+
+Some of the important elementary continuous-time signals are,
+\begin{itemize}
+\item[(i)] Exponential signals
+
+\item[(ii)] Sinusoidal signals
+
+\item[(iii)] Exponentially damped sinusoidal signals
+
+\item[(iv)] Unit step function
+
+\item[(v)] Unit impulse function
+
+\item[(vi)] Unit ramp function
+\end{itemize}
+
+\subsection{Exponential Signals}\label{chap1-sec1.3.1}
+
+A real exponential continuous-time signal is given by
+\begin{equation}
+x(\rmt)=\rmC\; \rme^{\at}\label{chap1-eq1.1}
+\end{equation}
+where both `$\rmC$' and `$\rma$' real constant. In Eqn. \eqref{chap1-eq1.1}, `$\rmC$' is known as the {\em amplitude} of the exponential signal at $\rmt=0$.
+
+If $\rma<0$ (i.e., `$\rma$' is negative), the signal $x(\rmt)$ is known as {\em decaying exponential signal} and if $\rma>0$ (i.e., `$\rma$ is positive) then $x(\rmt)$ is called {\em growing exponential signal}.
+
+Fig. \ref{chap1-fig1.8}(a) and (b) shows the real decaying and growing exponential signal respectively.
+
+\begin{figure*}[t!]
+\centering
+
+\begin{subfigure}[t]{0.4\textwidth}
+\centering
+\includegraphics{src/chap1/fig9a.eps}
+\caption{Real decaying exponential signal (i.e., $\rma<0$)}\label{chap1-fig1.8a}
+\end{subfigure}
+\qquad
+\begin{subfigure}[t]{0.4\textwidth}
+\centering
+\includegraphics{src/chap1/fig9b.eps}
+\caption{Real growing exponential signal (i.e., $\rma>0$}\label{chap1-fig1.8b}
+\end{subfigure}
+\caption{}\label{chap1-fig1.8}
+\end{figure*}
+
+
+In Eqn. \eqref{chap1-eq1.1}, if `$\rmC$' or `$\rma$' or both are complex numbers, then $x(\rmt)$ is known as {\em continuous-time complex exponential signal}.
+
+\medskip
+\noindent
+{\it\bfseries Note~:} In Eqn.~\eqref{chap1-eq1.1}, consider $\rmC=1$ and `$\rma$' is imaginary.
+\begin{equation}
+\text{i.e.,}\quad x(\rmt)=e^{j\omega_{o}\rmt}\label{chap1-eq1.2}
+\end{equation}
+
+The signal $x(\rmt)$ given by Eqn. \eqref{chap1-eq1.2} is periodic with fundamental period $\rmT=\dfrac{2\pi}{\omega_{o}}$. A continuous-time signal $x(\rmt)$ is periodic with period $\rmT$,
+\begin{align}
+\text{if}\quad x(\rmt) &= x(\rmt+T)\notag\\
+x(\rmt) &= e^{j\omega_{o}\rmt}\label{chap1-eq1.3}\\
+\therefore\quad x(\rmt+\rmT) &= e^{j\omega_{o}(\rmt+\rmT)}\label{chap1-eq1.4}
+\end{align}
+
+for $x(\rmt)$ to be periodic
+\begin{align}
+e^{j\omega_{o}\rmt} &= e^{j\omega_{o}(\rmt+\rmT)}\notag\\
+e^{j\omega_{o}\rmt} &= e^{j\omega_{o}\rmt}\cdot e^{j\omega_{o}\rmT}\label{chap1-eq1.5}
+\end{align}
+
+Eqn. \eqref{chap1-eq1.5} is valid only if
+\begin{gather}
+e^{j\omega_{o}\rmT}=1\notag\\
+\therefore\quad \text{If~~ } \omega_{o}=0\quad\text{then}\quad e^{j\omega_{o}\rmT}=1\label{chap1-eq1.6}
+\end{gather}
+
+If $\omega_{o}\neq 0$, then the fundamental period $\rmT$ of $x(\rmt)$ is the smallest value of $\rmT$ and is given by,
+\begin{equation}
+\rmT=\dfrac{2\pi}{\omega_{o}}\label{chap1-eq1.7}
+\end{equation}
+
+Substituting Eqn. \eqref{chap1-eq1.7} in Eqn. \eqref{chap1-eq1.6} we get,
+\begin{equation}
+e^{j\omega_{o}\frac{2\pi}{\omega_{o}}}=e^{j2\pi}=\cos 2\pi + \rmj\sin 2\pi =1\label{chap1-eq1.8}
+\end{equation}
+
+Therefore $e^{\rmj\omega_{o}\rmt}$ and $e^{-\rmj\omega_{o}\rmt}$ are periodic with fundamental period $T=\dfrac{2\pi}{\omega_{o}}$.
+
+\subsection{Sinusoidal signals}\label{chap1-eq1.3.2}
+
+A sinusoidal signal is given by,
+\begin{equation}
+x(\rmt)=A\cos (\omega_{o}\rmt+\phi)\label{chap1-eq1.9}
+\end{equation}
+where
+\begin{align*}
+\omega_{o}=2\pi \rmf_{o} &= \text{angular frequency (rad/sec)}\\
+\rmf_{o} &= \text{linear frequency~  (Hz)}\\
+\phi &= \text{phase shift\quad (radians)}
+\end{align*}
+The fundamental period of the signal $x(\rmt)$ in Eqn. \eqref{chap1-eq1.9} is $\rmT=\dfrac{2\pi}{\omega_{o}}$ (sec.)
+
+\subsection{Exponential damped sinusoidal signals}\label{chap1-sec1.3.3}
+
+An exponentially damped sinusoidal signal is given by,
+$$
+x(\rmt)=e^{-\at}\sin \omega \rmt\quad ;~ \text{where~ } \rma >0
+$$
+As `$\rmt$' increases, the amplitude of sinusoidal oscillation decreases exponentially and approaches zero as $\rmt\to \infty$. An exponentially damped sinusoidal signal is shown in Fig. \ref{chap1-fig1.9}.
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig10.eps}
+\caption{An exponentially damped sinusoidal signal}\label{chap1-fig1.10}
+\end{figure}
+
+\subsection{Unit step function : $\rmu(\rmt)$}\label{chap1-sec1.3.4}
+
+The continuous-time unit step function is defined as,
+\begin{align*}
+\rmu(\rmt) &= 1\quad ;~ \rmt\geq 0\\
+     &= 0\quad ;~ \rmt<0
+\end{align*}
+
+It is shown in Fig. \ref{chap1-fig1.10}
+\begin{center}
+{\bf Figure 1.10}
+\end{center}
+
+\subsection{Unit impulse function : $\delta(\rmt)$}\label{chap1-sec1.3.5}
+
+The continuous-time unit impulse function $\delta(\rmt)$ is defined as,
+\begin{align}
+\delta(\rmt) &= 0\quad ;~ \rmt\neq 0\notag\\
+\text{and}\quad \int\limits^{\infty}_{-\infty}\delta(\rmt)\dt &=1\label{chap1-eq1.10}
+\end{align}
+
+This function $\delta(\rmt)$ is also known as {\em Dirac delta function}.
+
+The continuous-time unit impulse function $\delta(\rmt)$ is shown in Fig. \ref{chap1-fig1.11}
+\begin{center}
+{\bf Figure 1.11}
+\end{center}
+
+Eqn. \eqref{chap1-eq1.10} indicates that the area covered by an unit impulse function is {\em unity}.
+
+The impulse function $\delta(\rmt)$ is the derivative of the step function with respect to time.
+
+Consider a non-idealized unit step function $u_{\Delta}(\rmt)$ as shown in Fig. \ref{chap1-fig1.12}(a). The derivative of $\rmu_{\Delta}(\rmt)$ with respect to time `$t$' is shown in Fig. \ref{chap1-fig1.12}(b).
+\begin{center}
+{\bf Figure 1.12(a) and (b)}
+\end{center}
+\begin{equation}
+\delta_{\Delta}(\rmt)=\dfrac{\du_{\Delta}}{\dt}(\rmt)\label{chap1-eq1.11}
+\end{equation}
+
+The area of function $\delta_{\Delta}(\rmt)=\Delta \cdot \dfrac{1}{\Delta}=1$. In Fig. \ref{chap1-fig1.12}(b), as $\Delta\to 0$,
+
+$\delta_{\Delta}(\rmt)$ becomes narrower and higher maintaining its unit area.
+\begin{equation}
+\delta(\rmt)=\Lt\limits_{\Delta \to 0}\delta_{\Delta}(\rmt)\label{chap1-eq1.12}
+\end{equation}
+
+Therefore unit impulse function has,
+\begin{itemize}
+\item[(i)] Zero width
+
+\item[(ii)] Infinite height
+
+\item[(iii)] Unit area or unit strength
+\end{itemize}
+
+A graphical representation of impulse function with strength `$\rmk$' is shown in Fig. \ref{chap1-fig1.13}. The strength `$\rmk$' indicates the area under the impulse.
+\begin{center}
+{\bf Figure 1.13}
+\end{center}
+
+\medskip
+\noindent
+{\bf Properties of continuous-time Impulse function :}
+\begin{itemize}
+\item[(i)] $\int\limits^{\infty}_{-\infty}\delta(\rmt)\dt=1$
+
+\item[(ii)] $\int\limits^{\infty}_{-\infty}\rmk \ \delta (\rmt)=k$
+
+\item[(iii)] $x(\rmt)\delta(\rmt)=x(0)\delta(\rmt)$
+
+\item[(iv)] $\int\limits^{\infty}_{-\infty}x(\rmt)\delta(\rmt)\dt=x(0)$
+
+\item[(v)] $x(\rmt)\cdot \delta(\rmt-\rmt_{o})=x(\rmt_{o})\delta(\rmt-\rmt_{o}) \ \Rightarrow$ (sampling property of impulse function)
+
+\item[(vi)] $\int\limits^{\infty}_{-\infty}x(\rmt)\delta(\rmt-\rmt_{o})\dt=x(\rmt_{o}) \ \Rightarrow$ (sifting property of impulse function)
+
+\item[(vii)] $\delta(\at)=\dfrac{1}{\rma}\delta(\rmt)$\quad ;~$\rma>0$
+\end{itemize}
+
+\subsection{Unit ramp function $r(\rmt)$}
+
+\begin{tabbing}
+A ramp function is defined as $\rmr(t)$ \== t\quad~;~ t $\geq 0$\\
+                                        \>= 0\!\quad~;~ t $<0$
+\end{tabbing}
+
+It is the integral of the unit step function $\rmu(\rmt)$. An unit ramp function is shown in Fig.~\ref{chap1-fig1.14}.
+\begin{center}
+{\bf Figure 1.14}
+\end{center}
+
+\section{Elementary Discrete-Time Signals}\label{chap1-sec1.4}
+
+
+
+
+
+\label{1end}
