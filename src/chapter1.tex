@@ -52,7 +52,7 @@ where `$\rmn$' is an {\em integer}.
 
 Practically, such sequences are usually obtained from a continuous - time signal by sampling it at a uniform rate.
 
-Consider `$\tau$' is the sampling period and `$n$' denote an integer $(-\infty<\rmn<\infty)$. Sampling a continuous-time signal $x(\rmt)$ at time $\rmt=\rmn\tau$ gives a sample value $x(\rmn\tau)$. We write this sampled signal as $x(\rmn)$ such that,
+Consider `$\tau$' is the sampling period and `$\rmn$' denote an integer $(-\infty<\rmn<\infty)$. Sampling a continuous-time signal $x(\rmt)$ at time $\rmt=\rmn\tau$ gives a sample value $x(\rmn\tau)$. We write this sampled signal as $x(\rmn)$ such that,
 $$
 x(\rmn)=x(\rmn\tau)\quad ;~ \rmn=0, \ \pm 1, \ \pm 2, \ \pm 3,\ldots
 $$
@@ -369,7 +369,7 @@ It is the integral of the unit step function $\rmu(\rmt)$. An unit ramp function
 \caption{An unit ramp function}\label{chap1-fig-1.14}
 \end{figure}
 
-\section{Elementary Discrete-Time Signals}\label{chap1-sec1.4}
+\section{ELEMENTARY DISCRETE-TIME SIGNALS}\label{chap1-sec1.4}
 The elementary discrete-time signals are direct counterparts of the continuous-time signals described in section
 \ref{chap1-sec1.3}. Many of the characteristics of basic discrete-time signals are directly analogous to that of basic continuous-time signal form that of continuous-time signal. 
 
@@ -391,15 +391,15 @@ Some of the important basic discrete-time signal are,
 \subsection{Discrete-time Exponential Signals}\label{chap1-subsec-1.4.1}
 A real exponential discrete-time signal or sequence is given by,
 \begin{align}
-x(n) &= \rmC \alpha^{n}\label{chap1-eq-1.13}\\
+x(\rmn) &= \rmC \alpha^{\rmn}\label{chap1-eq-1.13}\\
 \text{where}\qquad \alpha &= e^{\beta}\label{chap1-eq-1.14}
 \end{align}
 
-and C, $\alpha$ and $\beta$ are real constants. In eqn.\ref{chap1-eq-1.13} `C' is known at the \textit{amplitude} of the sequence at $n=0$. If $|\alpha| < 1$, the signal decays exponentially. Furthermore, if $\alpha < 0$ (i.e, $\alpha$ is negative), then the sign of $x(n)$ alternates i.e, when `n' is positive, $x(n)$ has positive value and when `n' is negative, $x(n)$ has negative value.
+and C, $\alpha$ and $\beta$ are real constants. In eqn.\ref{chap1-eq-1.13} `C' is known at the \textit{amplitude} of the sequence at $n=0$. If $|\alpha| < 1$, the signal decays exponentially. Furthermore, if $\alpha < 0$ (i.e, $\alpha$ is negative), then the sign of $x(\rmn)$ alternates i.e, when `n' is positive, $x(\rmn)$ has positive value and when `n' is negative, $x(\rmn)$ has negative value.
 
-The plos of $x(n) = \rmC \alpha^{n}$ for $\alpha > 1; 0< \alpha < 1 ; -1 < \alpha < 0$ and $\alpha < -1$  are shown in Fig. \ref{chap1-fig-1.29} (a), (b), (c) and (d) respectively.
+The plos of $x(\rmn) = \rmC \alpha^{\rmn}$ for $\alpha > 1; 0< \alpha < 1 ; -1 < \alpha < 0$ and $\alpha < -1$  are shown in Fig. \ref{chap1-fig-1.29} (a), (b), (c) and (d) respectively.
 
-In eqn. \ref{chap1-eq-1.13}, if $`\rmC'$ or $`\alpha'$ or both are complex numbers, then $x(n)$ is known as \textit{discrete-time complex exponential sequence},
+In eqn. \ref{chap1-eq-1.13}, if $`\rmC'$ or $`\alpha'$ or both are complex numbers, then $x(\rmn)$ is known as \textit{discrete-time complex exponential sequence},
 
 \begin{figure}[H]
 \centering
@@ -407,125 +407,143 @@ In eqn. \ref{chap1-eq-1.13}, if $`\rmC'$ or $`\alpha'$ or both are complex numbe
 %\caption{An unit ramp function}\label{chap1-fig-1.15(a)}
 \end{figure}
 
-\begin{center}
-{\bf 1.4.1 fig-1.15  (4 figures add)}
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.15(b).eps}
+%\caption{An unit ramp function}\label{chap1-fig-1.15(a)}
+\end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.15(c).eps}
+%\caption{An unit ramp function}\label{chap1-fig-1.15(a)}
+\end{figure}
+\setcounter{figure}{14}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.15(d).eps}
+\caption{}\label{chap1-fig-1.15}
+\end{figure}
 \noindent
 \textit{Note~:} In eqn. \ref{chap1-eq-1.13} and eqn.\ref{chap1-eq-1.14}. Consider $\rmC=1$ and and $\beta$ is purely imaginary.
 \begin{equation}
-\text{i.e.}, \qquad  x(n)= e^{j\Omega_{o}n}\label{chap1-eq-1.15}
+\text{i.e.}, \qquad  x(\rmn)= e^{j\Omega_{\rmo}\rmn}\label{chap1-eq-1.15}
 \end{equation} 
 
-The complex exponential discrete-time signal $x(n)= e^{j\Omega_{o}n}$  is periodic with fundamental period $N$ if,
+The complex exponential discrete-time signal $x(\rmn)= e^{j\Omega_{o}n}$  is periodic with fundamental period $N$ if,
 \begin{equation}
-\dfrac{\Omega_{o}}{2 \pi} = \dfrac{m}{N}\label{chap1-eq-1.16}
+\dfrac{\Omega_{\rmo}}{2 \pi} = \dfrac{\rmm}{\rmN}\label{chap1-eq-1.16}
 \end{equation}
 
-where $`m'$  is an integer (i.e, $\frac{\Omega_{o}}{2\pi}$ must be a rational number)
+where $`\rmm'$  is an integer (i.e, $\frac{\Omega_{\rmo}}{2\pi}$ must be a rational number)
 
-A discrete-time signal $x(n)$ is periodic with period $N$, if
+A discrete-time signal $x(\rmn)$ is periodic with period $\rmN$, if
 \begin{align}
-x(n) &= x(n + N)\notag\\
-x(n) &= e^{j \Omega_{o}n}\notag\\
-\therefore x(n + N)&= e^{j \Omega_{o}(n + N)}\label{chap1-eq-1.17}\\ 
-\therefore x(n + N)&= e^{j \Omega_{o}n} \cdot e^{j \Omega_{o} N}=x(n)= e^{j \Omega_{o}n} \quad \text{if and only if},\notag\\
-e^{j \Omega_{o} N} &= 1\label{chap1-eq-1.18}
+x(\rmn) &= x(\rmn + \rmN)\notag\\
+x(\rmn) &= e^{\rmj \Omega_{\rmo}\rmn}\notag\\
+\therefore x(\rmn + \rmN)&= e^{\rmj \Omega_{\rmo}(\rmn + \rmN)}\label{chap1-eq-1.17}\\ 
+\therefore x(\rmn + \rmN)&= e^{\rmj \Omega_{\rmo}\rmn} \cdot e^{\rmj \Omega_{\rmo} \rmN}=x(\rmn)= e^{\rmj \Omega_{\rmo}\rmn} \quad \text{if and only if},\notag\\
+e^{\rmj \Omega_{\rmo} \rmN} &= 1\label{chap1-eq-1.18}
 \end{align}
 \begin{equation}
-\text{Eqn. \ref{chap1-eq-1.18} is satisfied  only if either} \quad \Omega_{o} = 0\quad \text{or} \quad
-\Omega_{o}N= 2\pi m\label{chap1-eq-1.19}
+\text{Eqn. \ref{chap1-eq-1.18} is satisfied  only if either} \quad \Omega_{\rmo} = 0\quad \text{or} \quad
+\Omega_{\rmo}\rmN= 2\pi \rmm\label{chap1-eq-1.19}
 \end{equation}
 where $`m'$ is an integer.
 \begin{equation}
-\therefore \dfrac{\Omega_{o}}{2 \pi}  = \dfrac{m}{N}\label{chap1-eq-1.20}
+\therefore \dfrac{\Omega_{\rmo}}{2 \pi}  = \dfrac{\rmm}{\rmN}\label{chap1-eq-1.20}
 \end{equation}
-Therefore discrete-time complex exponential signal is periodic only if $\Omega_{o}$ is a rational multiple of $2\pi$.
+Therefore discrete-time complex exponential signal is periodic only if $\Omega_{\rmo}$ is a rational multiple of $2\pi$.
 \begin{equation}
-\text{i.e.},  \quad \Omega_{o} = 2\pi \cdot \dfrac{m}{N}\label{chap1-eq-1.21}
+\text{i.e.},  \quad \Omega_{\rmo} = 2\pi \cdot \dfrac{\rmm}{\rmN}\label{chap1-eq-1.21}
 \end{equation}
 
-Where `$N$' i fundamental period $\Omega_{o}$ is angular frequency is radians (if `$n$' is  dimensionless) and `$m$' is an integer.
+Where `$\rmN$' i fundamental period $\Omega_{\rmo}$ is angular frequency is radians (if `$\rmn$' is  dimensionless) and `$\rmm$' is an integer.
 
 \subsection{Discrete-time Sinusoidal Signals}\label{chap1-subsec-1.4.2}
 
 A discrete-time version of a sinusoidal signal is given by
 \begin{equation}
-x(n) = \rmA \cos (\Omega_{o}n + \Phi)\label{chap1-eq-1.22}
+x(\rmn) = \rmA \cos (\Omega_{\rmo}\rmn + \Phi)\label{chap1-eq-1.22}
 \end{equation}
-where `$A$' is maximum value of $x(n)$, $\Omega_{o}$ is angular frequency and $\Phi$ is phase angle.
+where `$A$' is maximum value of $x(\rmn)$, $\Omega_{\rmo}$ is angular frequency and $\Phi$ is phase angle.
 
-If `$n$' is dimensionless,both $\Omega_{o}$ and $\Phi$ are measured in radians.
+If `$\rmn$' is dimensionless,both $\Omega_{\rmo}$ and $\Phi$ are measured in radians.
 
-Unlike continuous-time sinusoidal signal, discrete-time sinusoidal signals are note periodic for an arbitrary values of $\Omega_{o}$. For a discrete-time sinusoidal signal to be periodic, the angular frequency $\Omega_{o}$ must be a rational multiple of $2 \pi$.
+Unlike continuous-time sinusoidal signal, discrete-time sinusoidal signals are note periodic for an arbitrary values of $\Omega_{\rmo}$. For a discrete-time sinusoidal signal to be periodic, the angular frequency $\Omega_{\rmo}$ must be a rational multiple of $2 \pi$.
 \begin{equation}
-\text{i.e.}, \qquad \Omega_{o} = 2 \pi\cdot \dfrac{m}{N}\label{chap1-eq-1.23}
+\text{i.e.}, \qquad \Omega_{\rmo} = 2 \pi\cdot \dfrac{\rmm}{\rmN}\label{chap1-eq-1.23}
 \end{equation}
-where `$m$' and `$N$' are integers.
+where `$\rmm$' and `$\rmN$' are integers.
 
-Consider a signal $x(n)$ shown in \ref{chap1-Fig-1.16} which is given by,
+Consider a signal $x(\rmn)$ shown in \ref{chap1-fig-1.16} which is given by,
 \begin{equation}
-x(n)= \cos\left(\dfrac{\pi n}{4}\right)\label{chap1-eq-1.24}
+x(\rmn)= \cos\left(\dfrac{\pi n}{4}\right)\label{chap1-eq-1.24}
 \end{equation}
 
 Comparing eqn. \ref{chap1-eq-1.24} with eqn. \ref{chap1-eq-1.22}, we have
 $$
-A = 1, \quad \Phi = 0 \quad \text{and}\quad \Omega_{o} = \dfrac{\pi}{4} = \dfrac{2\pi}{ 8} = 2\pi\cdot \dfrac{1}{8} 
+A = 1, \quad \Phi = 0 \quad \text{and}\quad \Omega_{\rmo} = \dfrac{\pi}{4} = \dfrac{2\pi}{ 8} = 2\pi\cdot \dfrac{1}{8} 
 $$
 
 $\therefore$ Fundamental period $N = 8$.
 $$
-x(n)= \cos \left(\dfrac{\pi n}{4} \right)
+x(\rmn)= \cos \left(\dfrac{\pi \rmn}{4} \right)
 $$
-
-\begin{center}
- chap1 fig 1.16 ??????????? add
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.16.eps}
+\caption{A discrete-time sinusoidal sequence $x(\rm)= \cos\left(\frac{\pi \rmn}{4}\right)$}\label{chap1-fig-1.16}
+\end{figure}
 
 
 \subsection{Discrete-time exponentially damped sinusoidal signals}\label{chap1-subsec-1.4.3}
 
 A discrete-time exponentially damped sinusoidal sequence  is given by,
 \begin{equation}
-x(n) = \rmC \alpha^{n} \sin(\Omega n + \Phi) \quad ; 0 < |\alpha| < 1 \label{chap1-eq-1.25}
+x(\rmn) = \rmC \alpha^{\rmn} \sin(\Omega \rmn + \Phi) \quad ; 0 < |\alpha| < 1 \label{chap1-eq-1.25}
 \end{equation}
 
-The value of $x(n)$ decreases as `$n$' increases.
+The value of $x(\rmn)$ decreases as `$\rmn$' increases.
 
-\subsection{Discrete-time unit step sequence : $u(n)$}\label{chap1-subsec-1.4.4}
+\subsection{Discrete-time unit step sequence : $\rmu(\rmn)$}\label{chap1-subsec-1.4.4}
 
 A discrete-time unit step sequence is defined as,
 \begin{align*}
-u(n) &= 1 \quad ; n \geq 0\\
-&= 0\quad ; n < 0
+\rmu(\rmn) &= 1 \quad ; \rmn \geq 0\\
+&= 0\quad ; \rmn < 0
 \end{align*}
 
-It is shown in Fig \ref{chap1-fig-1.17}
-\begin{center}
-chap1-fig 1.17 ???????? add
-\end{center}
+It is shown in Fig.\ref{chap1-fig-1.17}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.17.eps}
+\caption{An unit step sequence}\label{chap1-fig-1.17}
+\end{figure}
 
 \subsection{Discrete-time unit impulse sequence : $\delta(n)$}\label{chap1-subsec-1.4.5}
 
 A discrete-time impluse sequence is defined as,
 \begin{align*}
-\delta(n) &= 1  \quad; n=0\\
-& =0 \quad; n \neq 0
+\delta(\rmn) &= 1  \quad; \rmn=0\\
+& =0 \quad; \rmn \neq 0
 \end{align*}
 
 It is shown in Fig. \ref{chap1-fig-1.18}
 
-\begin{center}
-chap1 fig 1.18 ??????? add
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.18.eps}
+\caption{A discrete-time unit impulse sequence}\label{chap1-fig-1.18}
+\end{figure}
 
 \noindent
 {\it\bfseries Properties if discrete-time Impulse sequence:} 
 \begin{center}
 \begin{tabular}{ll}
-(i)   & $x(n)\delta(n)= x(0)\delta(n)$ \quad\qquad (ii)~~  $x(n)\delta(n_{o})\delta(n-n_{o})$  \\
-(iii) & $\sum\limits_{n= -\infty}^{\infty}x(n)\delta(n) = x(0)$\\
-(iv) & $\sum\limits_{n=-\infty}x(n)\delta(n-n_{o}) =x(n_{o})$ \quad \text{(sifting property of impulse sequence)}
+(i)   & $x(\rmn)\delta(n)= x(0)\delta(\rmn)$ \quad\qquad (ii)~~  $x(\rmn)\delta(\rmn_{\rmo})\delta(\rmn-\rmn_{\rmo})$  \\
+(iii) & $\sum\limits_{\rmn= -\infty}^{\infty}x(\rmn)\delta(\rmn) = x(0)$\\
+(iv) & $\sum\limits_{\rmn=-\infty}x(\rmn)\delta(\rmn-\rmn_{o}) =x(\rmn_{\rmo})$ \quad \text{(sifting property of impulse sequence)}
 \end{tabular}
 \end{center}
 
@@ -547,9 +565,11 @@ A descrete-timne ramp sequence is defined as,
 \end{align*}
 
 It is shown in Fig \ref{chap1-fig-1.19}
-\begin{center}
-chap1 fig1.19 ??????? add 
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.19.eps}
+\caption{A discrete-time unit ramp sequence}\label{chap1-fig-1.19}
+\end{figure}
 
 \section{BASIC OPERATIONS ON SIGNALS}\label{chap1-sec-1.5}
 
@@ -576,7 +596,7 @@ is known as amplitude scaled version of $x (\rmn)$ where `$\rmc$' is a \textit{s
 
 \item [{\rm b)}] {\it \bfseries Addition:} Let $x_{1}(\rmt)$ and $x_{2}(\rmt)$ are continuous-time signals. Then the signal,
 \begin{equation}
-{\rmy}{(\rmt)} = x_{1}{(\rm)} + x_{2}{(\rmt)}\label{chap1-eq-1.28}
+{\rmy}{(\rmt)} = x_{1}{(\rmt)} + x_{2}{(\rmt)}\label{chap1-eq-1.28}
 \end{equation}
 is known as the addition of $x_{1}{(\rmt)}$ and $x_{2}{(\rmt)}$. The value of ${\rmy} {(\rmt)}$ is obtained by adding the values of $x_{1}{(\rmt)}$ and $x_{2}{(\rmt)}$ for all `${\rmt}$'.
 
@@ -621,18 +641,23 @@ is known as the multiplication of $x_{1}(\rmn)$ and $x_{2}(\rmn)$. The value of 
 If ${\rma} > 1$. The signal $\rmy{(\rmt)}$ is compressed version of $x{(\rmt)}$ and if $0 < {\rma} < 1$, the signal $\rmy{(t)}$ is an expanded version of $x{(\rmt)}$.
 
 Eg. Let $x(\rmt)$ is as shown in Fig. \ref{chap1-fig-1.20}
-
-\begin{center}
-chap1 fig-1.20 ???????? add
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.15(b).eps}
+\caption{A continuous-time signal $x(\rmt)$}\label{chap1-fig-1.20}
+\end{figure}
 
 The signal $x(2 \rmt)$ and $x\left(\frac{1}{2}\rmt\right)$ are shown in Fig.\ref{chap1-fig-1.21} respectively.
-\begin{center}
-chap1 fig-1.21 ???????? add
-\end{center}
-\begin{center}
-chap1 fig-1.22 ???????? add
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.21.eps}
+\caption{Compressed version of $x(\rmt)$ by a factor 2}\label{chap1-fig-1.21}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.22.eps}
+\caption{Expanded version of $x(\rmt)$ by a factor 2}\label{chap1-fig-1.22}
+\end{figure}
 
 In the discrete-time sequence.
 \begin{equation}
@@ -640,15 +665,19 @@ In the discrete-time sequence.
 \end{equation}
 where `$\rmk'$ is an integer. If $\rmk>1$, some samples of $x(\rmn)$ would be lost.
 
-Eg. Let $x(\rmn)$ is shown in Fig. \ref{chap-fig-1.23}
-\begin{center}
-chap1 fig-1.23 ???????? add
-\end{center}
+Eg. Let $x(\rmn)$ is shown in Fig. \ref{chap1-fig-1.23}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.23.eps}
+\caption{A discrete-time signal $x(\rmn)$}\label{chap1-fig-1.23}
+\end{figure}
 
 The signal $x(2\rmn)$ is shown below in Fig. \ref{chap1-fig-1.24}
-\begin{center}
-chap1 fig-1.24 ???????? add
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.24.eps}
+\caption{Compressed version of $x(\rmn)$ by a factor 2}\label{chap1-fig-1.24}
+\end{figure}
 
 \item[{\rm b)}] {\it \bfseries Time Shifting:} Let $x(\rmt)$ be a continuous-time. Then the signal,
 \begin{equation}
@@ -657,14 +686,18 @@ chap1 fig-1.24 ???????? add
 is known as time shifted version of $x(\rmt)$, where  `$\rmt_{\rmo}$' is the time shift
 
 If $\rmt_{\rmo}>0$ the waveform of the signal is shifted to the right. If $\rmt_{\rmo}< 0$ the waveform is shifted to the left. Let $x(\rmt)$ is shown in Fig. \ref{chap1-fig-1.25}. 
-\begin{center}
-chap1  fig-1.25 add ????
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.25.eps}
+\caption{A continuous-time signal}\label{chap1-fig-1.25}
+\end{figure}
 
 Then, $x(\rmt-2)$ and $x(\rmt+3)$ is shown in Fig. \ref{chap1-fig-1.26} and \ref{chap1-fig-1.27} respectively.
-\begin{center}
-chap1  fig-1.26 add ????
-\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics{src/chap1/fig.1.26.eps}
+\caption{A right shifted (delayed) signal}\label{chap1-fig-1.26}
+\end{figure}
 \begin{center}
 chap1  fig-1.27 add ????
 \end{center}
@@ -1120,8 +1153,1193 @@ ${\rmy(\rmt)} = x(\rmt)\cdot(\delta(\rmt + 3/2) -\delta(\rmt -3/2))$ as shown in
 \begin{center}
 chap1-fig-P1.15.2 ????? add
 \end{center}
-
-
 \end{solution}
 
+\begin{exam*}
+Plot the signal $x(\rmt)=3\rmu(\rmt) + \rmt\rmu(\rmt)-(\rmt-1) \rmu(\rmt-1)-5\rmu(\rmt-3)$
+\end{exam*}
+\begin{solution}
+\begin{align*}
+3 \rmu(\rmt) &= 3 \quad; \rmt > 0\\
+             &= 0 \quad; \rmt < 0\\[0.1cm]
+\rmt\rmu(\rmt) &= \rmt \quad; \rmt > 0\\
+               &= 0 \quad; \rmt < 0\\[0.1cm]
+(\rmt-1)\rmu(\rmt-1) &= (\rmt-1) \quad; \rmt> 1\\
+                     & =0         \quad; \rmt< 0\\         
+5\rmu(\rmt-2)&=5 \quad; \rmt> 2\\[0.1cm]
+             &=0  \quad; \rmt <2          
+\end{align*}
+\begin{tabular}{>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+\text{For}\quad & \rmt < 0 \quad &;\quad x(\rmt) = 0+0-0-0=0\\
+\text{For}\quad & 0 < \rmt < 1 \quad &;\quad x(\rmt) = 3+\rmt-0-0=3 + \rmt\\
+\text{For}\quad & 1 < \rmt < 2 \quad &;\quad x(\rmt) = 3+\rmt -(\rmt-1)-0 =4\\
+\text{For}\quad & 2 < \rmt \quad &;\quad 2(\rmt)=3+ \rmt-(\rmt-1)-5 =-1
+\end{tabular}
+
+The plot of $x(\rmt)$ is shown in Fig. ??? below.
+
+\begin{figure}
+chap1 page-1 Example-1 figure ????? add
+\end{figure}
+\end{solution}
+
+\begin{exam*}
+Obtain the functional expension for the originla show in below.
+\begin{center}
+chap1 page-2 Example-2 figure ????? add
+\end{center}
+\end{exam*}
+
+\begin{solution}
+~
+
+\medskip
+\begin{tabular}{>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+\text{For}\quad & \rmt < -2 \quad &;\quad x(\rmt) = 0\\
+\text{For}\quad & -2 < \rmt < -1 \quad &;\quad x(\rmt) = 0+3(\rmt+2) =3(\rmt+2)\\
+\text{For}\quad & -1 < \rmt < 1 \quad &;\quad x(\rmt) = 3(\rmt+2)-6(\rmt+1)=3\rmt\\
+\text{For}\quad & 1 < \rmt  < 3 \quad &;\quad x(\rmt)=-3\rmt +3(\rmt-1)=-3\\
+\text{For}\quad &  \rmt  < 3 \quad &;\quad x(\rmt) =-3+3=0
+\end{tabular}
+
+\medskip
+Also
+$$
+x(\rmt) = 3(\rmt + 1)\rmu(\rmt+ 1)-6(\rmt+1)\rmu(\rmt+1) + 3(\rmt-1)\rmu(\rmt-1)-3\rmu(\rmt-3)
+$$
+\end{solution}
+
+\begin{exam*}
+Sketch $x(\rmt)= 3\rmu(\rmt+3)-\rmu(\rmt)+ 3\rmu(\rmt-3)-5\rmu(\rmt-6)$ and $x(-3\rmt-6)$
+\end{exam*}
+
+\begin{solution}
+The Sketch of $x(\rmt)$ is shown in Fig ????? below
+
+\begin{center}
+chap1 page-3 Example-3 figure ????? add 4 figures
+\end{center}
+\end{solution}
+
+\begin{exam*}
+Sketch the signal $x(-\rmt)$ and $x(2-\rmt)$
+\begin{align*}
+x(\rmt) &= \rmt \quad ;\quad 0 \leq \rmt \leq 3\\
+        &= 0 \quad ;\quad \text{elsewhere}
+\end{align*}
+\end{exam*}
+
+\begin{solution}
+He sketch of $x(\rmt)$ is flown in Fig.???????? below
+\begin{center}
+chap1 Example-4 Fig ???? add 1st
+\end{center}
+
+The sketch of $x(-\rmt)$ is shown in Fig.?????? below
+\begin{center}
+chap1 Example-4 Fig ???? add 2st
+\end{center}
+
+Now, $x(2-\rmt) = x(-rmt+2)$
+
+The sketch of $\rm(\rmt)=x(\rmt+2)$ is shown 
+\begin{center}
+chap1 Example-4 Fig ???? add 3st
+\end{center}
+
+The sketch of $\rmb(\rmt)= \rma(-\rmt) =x(-t + 2) = x(2-\rmt)$ is shown in Fig?????? 
+\begin{center}
+chap1 Example-4 Fig ???? add 4st
+\end{center}
+\end{solution}
+
+\begin{exam*}
+The signals $x(\rmt)$ and $\rmg(\rmt)$ are shown in Fig.??? below. Express $x(\rmt)$ in terms of $\rmg(\rmt)$.
+\begin{center}
+chap1 Example-5 Fig ???? add 
+\end{center}
+\end{exam*}
+
+\begin{solution}
+The given original $x(\rmt)$ is the summation if foue signals shown in Fig.?????below.
+\begin{center}
+chap1 Example-5 Fig ???? add pagesno-5
+\end{center}
+\begin{align*}
+x(\rmt) &= \rmg_{1}(\rmt) + \rm{g_{2}} + {\rmg_{3}}(\rmt) + {\rmg_{4}}(\rmt)\\
+        &= \rmg \left(\dfrac{1}{2}\rmt-1\right) + \rmg\left(\dfrac{2}{3}\rmt - \dfrac{5}{3}\right) + \rmg(\rmg\rmt-7)
+\end{align*}
+\end{solution}
+
+\begin{exam*}
+A periodic signal is given by,
+\begin{align*}
+x(\rmt) &=1 \quad ; 0 \leq \rmt \leq 1\\
+        &=-2 \quad ; 1< \rmt < 2 
+\end{align*}
+with period $\rmT =2$. The derivative of this signal is replace to the impluse train
+$$
+\rmg(\rmt) =\sum_{\rmk=-\infty}^{\infty} \delta(\rmt-2\rmk)
+$$
+
+It can be shown that,
+$$
+\dfrac{\rmd x(\rmt)}{\dt}  = \rmA_{1}\rmg(\rmt-\rmt_{1}) + \rmA_{2}\rmg(\rmt-\rmt_{2}).
+$$
+
+Determine $\rmA_{1}, \rmA_{2}, \rmt_{1}$ and $\rmt_{2}$.
+\end{exam*}
+
+\begin{solution}
+The plots of $x(\rmt), \frac{\rmd x}{\rmd \rmt}$ and $\rmg(\rmt)$ are shown in Fig. ??? (a), (b) and (c) below.
+\begin{center}
+chap1 examples 6 fig ??? add
+\end{center}
+
+By observation, $\dfrac{\rmd x(\rmt)}{\rmd \rmt} = 3 \rmg(\rmt)-3\rmg(\rmt-1)$
+
+\medskip
+Comparing with, $\dfrac{\rmd x(\rmt)}{\rmd \rmt} = \rmA_{1}\rmg(\rmt-\rmt_{1})-\rmA_{2}\rmg(\rmt-\rmt_{2}),$
+
+\medskip
+We get $\rmA_{1} =3 ; \rmA_{2}=-3 ; \rmt_{1}=0$ and $\rmt_{2}=1$
+\end{solution}
+
+\begin{exam*}
+Express the following signals shown in Fig-??? (a) \& (b) below, in terms of step function and ramp function
+\begin{center}
+chap1 example fig??? add page-7 fig-a 
+\end{center}
+
+\begin{center}
+chap1 example fig??? add page-8 fig-b
+\end{center}
+\end{exam*}
+
+\begin{solution}
+~
+
+\begin{itemize}
+\item[{\rm (a)}] $x(\rmt) = 4 \rmu(\rmt+4)- \rmr(\rmt + 4) + 2\rmr(\rmt) - \rmr(\rmt-2)-2\rmu(\rmt-2)$
+
+\item[{\rm (b)}] $x(\rmt) = 4\rmr(\rmt+1)-6\rmr(\rmt)+ 2\rmr(\rmt-2)$
+\end{itemize}
+\end{solution}
+
+\begin{exam*}
+Evaluate the following integrals.
+
+\medskip
+\begin{itemize}
+\item[{\rm(a)}] $\int\limits_{-\infty}^{\infty}(3\rmt^{2}+1)\delta(\rmt)\dt$
+
+\item[{\rm(b)}] $\int\limits_{-1}^{1}(3\rmt^{2} + 1)\delta(\rmt) \dt$
+
+\item[{\rm(c)}]  $\int\limits_{-1}^{2} (3\rmt^{2}+1)\delta(\rmt)\dt$
+
+\item[{\rm(d)}] $\int\limits_{-2}^{1} (\rmt + \rmt^{2})\delta(\rmt-3)\dt$
+
+\item[{\rm(e)}] $\int\limits_{-2}^{4} (\rmt + \rmt^{2})\delta(2\rmt-4)\dt$
+
+\item[{\rm(f)}] $\int\limits_{0}^{3} \rme^{\rmt-2} \delta(2\rmt-4) \dt$
+
+\item[{\rm(g)}] $\int\limits_{-\infty}^{\infty} \cos \rmt\cdot \rmu(\rmt-1)\delta(\rmt)\dt$
+\end{itemize}
+\end{exam*}
+
+\begin{solution}
+We know that $\int\limits_{-\infty}^{\infty}(3\rmt^{2}+1)\delta(\rmt)\dt = x(\rmt)\left. \right|_{\rmt =0}$ and $\int\limits_{-\infty}^{\infty} x(\rmt) \delta(\rmt-\rmt_{0})\dt = x(\rmt_{0})=x(\rmt)\left. \right|_{\rmt =\rmt_{0}}$.
+\begin{itemize}
+\item[{\rm(a)}] $\int\limits_{-\infty}^{\infty}(3\rmt^{2}+ 1)\delta(\rmt)\dt =(3\rmt+ 1)\left. \right|_{\rmt=0} =1$
+
+\item[{\rm(b)}] $\int\limits_{-1}^{1}(3\rmt^{2}+ 1) \delta(\rmt)\dt = (3\rmt^{2} + 1)\left. \right|_{\rmt=0} = 1$
+
+\item[{\rm(c)}] $\int\limits_{-1}^{2} (3\rmt^{2}+1)\delta(\rmt)\dt=0$\qquad
+$
+\left[
+\begin{aligned}
+& \because \delta(\rmt)\; \text{exitsh at}\; \rmt=0,\; \text{but the} \\
+& \text{integration if form}\; \rmt=1 \;\text{and}\; \rmt=2
+\end{aligned}
+ \right]
+$
+
+\item[{\rm(d)}] $\int\limits_{-2}^{1} (\rmt + \rmt^{2})\delta(\rmt-3)\dt$\qquad\quad
+$
+\left[
+\begin{aligned}
+& \because \delta(\rmt=3)\; \text{exitsh at}\; \rmt=3,\; \text{but the} \\
+& \text{integration if form}\; \rmt=-2 \;\text{to}\; \rmt=1
+\end{aligned}
+ \right]
+$
+
+\item[{\rm(e)}] $\int\limits_{-2}^{4} (\rmt + \rmt^{2})\delta(\rmt-3)= (\rmt+ \rmt^{2})\left. \right|_{\rmt=3} =12$
+
+\item [{\rm(f)}]
+\begin{equation*}
+\begin{split}
+\int\limits_{-0}^{3}e^{\rmt-2}\delta(2\rmt-4)\dt = \int_{0}^{3}e^{\rmt-2} \cdot \delta(2(\rmt-1))\dt &= \int\limits_{0}^{3}e^{\rmt-2}\frac{1}{2}\delta(\rmt-2)\dt\\
+&=\frac{1}{2}e^{\rmt-2} \left. \right|_{\rmt=2} =\frac{1}{2}
+\end{split}
+\end{equation*}
+
+\item[{\rm(g)}] $\int\limits^{\infty} \cos\rmt(\rmt-1)\delta(\rmt)\dt =0$
+\end{itemize}
+\end{solution}
+
+\begin{exam*}
+Consider the following sequences.
+\begin{align*}
+x_{1}(\rmn) &=\{ 1,2,3,4,5,6,7\}\\
+&\qquad \qquad \uparrow\\
+x_{2}(\rmn) &=\{ 2-,0,4,-7,3,4,0 \}\\
+&\qquad \qquad \uparrow\\
+x_{3}({\rmn}) &= \{ -1,1,3,-3,5,-5,7 \}\\
+&\qquad \qquad \uparrow
+\end{align*}
+
+Determine: (i) $(\rmn) = x_{1}(\rmn) + x_{2}(\rmn)$  \quad (ii) $\rmb(n)= x_{1}(\rmn)\cdot x_{3}(\rmn)$ \quad (iii) $\rmc(\rmn)=x_{2}(\rmn)-x_{3}(\rmn)$ \quad (iv) $\rmd(\rmn) = 3.5 x_{2}(\rmn)$.
+\end{exam*}
+
+\begin{solution}
+~
+
+\begin{flalign*}
+{(\rm i)}\qquad \rma(\rmn) &= x_{1}(\rmn) + x_{2}(\rmn)&\\
+           &= \{-1,2,7,-3,8,10\}\\
+           &\qquad \qquad \uparrow \\[0.1cm]         
+{(\rm ii)}\qquad \rmb(\rmn) &= x_{1}(\rmn) \cdot x_{3}(\rmn)\\
+           &= \{-1,2,9,-12,25,30,49\}\\
+           &\qquad \qquad \uparrow\\[0.1cm]
+{(\rm iii)}\qquad\rmc(\rmn) &= x_{2}(\rmn) - x_{3}(\rmn)\\
+           &= \{-1,-1,1,-4,-2,9,-7\}\\
+           &\qquad \qquad \uparrow\\[0.1cm]           
+{(\rm iv)}\qquad\rmd(\rmn) &= 3.5 x_{2}(\rmn)\\
+           &= \{-7,0,14,,-24.5,10.5,14,0\}\\
+           &\qquad \qquad \uparrow           
+\end{flalign*}
+\end{solution}
+
+
+\begin{exam*}
+A sequence $x(\rmn)$ in Fig. shown in below.
+
+Sketch $x(-2-\rmn)$. Write it functional representation terms of impulse function.
+\begin{center}
+chap1 example page-no-10 figg????? add
+\end{center}
+\end{exam*}
+
+
+\begin{solution}
+$x(-2-\rmn) = x(\rmn-2)$.
+
+The sequences $x(\rmn-2)$ and $x(-2-\rmn) = \rmn(-\rmn-2)$ are shown in Fig,??? (a) \& (b) below.
+\begin{center}
+chap1 example page-no-10 figg????? add 2-figures
+\end{center}
+
+Functional representation.
+$$
+x(-2-\rmn) = 4\delta(\rmn+ 4)- 4\delta(\rmn+3)+ 2\delta(\rmn + 2) + 2\delta(\rmn+1)
+$$
+\end{solution}
+
+\begin{exam*}
+A discrete-time sequence $\rmr(\rmn)$ is given by $x(\rmn) = \delta(\rmn) + 2\delta(\rmn-1) + 3\delta(\rmn-3)\break +2 \delta(\rmn-4) + \delta(\rmn-5) + \delta(\rmn-6) + 2\delta(\rmn -7) + 3 \delta(\rmn-8)$, If $\rmy(\rmn)=x(\rma\rmn +\rmb) = 2\delta(\rmn) \break + 3\delta(\rmn-1) + \delta(\rmn-2) + 2\delta(\rmn-3)$, find $\rma$ and $\rmb$.
+\end{exam*}
+
+\begin{solution}
+The sketch of $x(\rmn)$ is shown in Fig--???? below.
+\begin{center}
+chap1 example page-no-11 figg-1????? add 
+\end{center}
+
+The sketch of $\rmy(\rmn) = x(\rma \rmn+ \rmb) = 2\delta(\rmn) + 3\delta(\rmn-1)+ \delta(\rmn-2)+ 2 \delta(\rmn-3)$ is shown in Fig..???? below
+\begin{center}
+chap1 example page-no-11 figg-1????? add 
+\end{center}
+
+By observation $\rmg(\rmn) = x(2\rmn+ 1)$
+
+$\therefore$ $\rma=2$ ; $\rmb=1$.
+\end{solution}
+
+\begin{exam*}
+A discrete-time signal $x(\rmn)$ is shown in Fig??? below. Sketch the following signals. Also represent then by a sequence of number and the write a functional representation for each of them.
+\begin{center}
+chap1 example page-no-12 figg-????? add 
+\end{center}
+\begin{tabular}{>{$}l<{$}@{\hspace{1cm}}>{$}c<{$}@{\hspace{1cm}}>{$}l<{$}@{\hspace{1cm}}>{$}l<{$}}
+\rm{(a)} \; x(\rmn) \rmu(1-\rmn) & \rm{(b)}\; x(\rmn)[\rmu(\rmn+2)-\rmu(\rmn)] & \rm{(c)}\; x(\rmn)\delta(\rmn-1)
+\end{tabular}
+\end{exam*}
+
+\begin{solution}
+~
+
+\begin{tabular}{>{$}l<{$}@{\hspace{0.5cm}}>{$}c<{$}@{\;}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}}
+\rm{(a)} \; x(\rmn) \rmu(1-\rmn) &  \rmu(1-\rmn)&=1 & ;(1-\rmn)\geq 0 & ; \rmn \leq 1\\
+                                 &        &=0   & ;               & ; \rmn > 1
+\end{tabular}
+
+The sketch of $x(\rmn) \rmu(1-\rmn)$ is shown in Fig.???? below.
+
+\begin{figure}
+chap1 example page-no-11 figg-1????? add 
+\end{figure}
+functional representation 
+
+\begin{tabular}{>{$}l<{$}@{\;}>{$}c<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}}
+  x(\rmn) \rmu(1-\rmn)&=n  & ; -3\leq \rmn \leq 1 \\
+                      &=0  & ; \text{else where}           
+\end{tabular}
+\begin{flalign*}
+\text{is a sequence number}\quad x(\rmn)\rmu(1-\rmn) &= \{3, 2, 1, 0, 1\}&\\
+                                                &= \qquad\quad\;\; \uparrow          
+\end{flalign*}
+
+\begin{tabular}{>{$}l<{$}@{\;}>{$}c<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}}
+{(\rm b)}\; x(\rmn)[\rmu(\rmn+2)-\rmu(\rmn)] :\rmu(\rmn+2)-\rmu(\rmn) &=1 &;& -2 \leq \rmn \leq 1\\
+                                                                  &=0 &;&\text{else where} 
+\end{tabular}
+
+The sketch of $x(\rmn)\delta(\rmn-1)$ is shown in Fig.??? below
+
+
+watch of $x(\rmn)[\rma(\rm+2)-\rmu(\rmn)]$ is belown in Fig.-???? below.
+\begin{figure}
+chap1 example page-no-12 figg-3????? add 
+\end{figure}
+
+\begin{tabular}{>{$}l<{$}@{\;}>{$}c<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}}
+\text{Functional representation}\; x(\rmn)[\rmu(\rmn+2)-\rmu(\rmn)] &=|{\rmn}| &;& \rmn =-1, -2\\
+                                                                    &=0 &;&\text{else where} 
+\end{tabular}
+\begin{flalign*}
+\text{As sequence of number}\quad x(\rmn)[\rma(\rmn+2)-\rmu(\rmn)] &=\{2,1,0 \}&\\
+                                                              &\qquad\quad\uparrow  
+\end{flalign*}
+
+\begin{tabular}{>{$}l<{$}@{\;}>{$}c<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}}
+{\rm (c)}\; x(\rmn)\delta(\rmn-1) \qquad \delta(\rmn-1) &=1 & ; & \rmn=1\\
+                                         &=0 & ; &\text{else where} 
+\end{tabular}
+\begin{center}
+chap1 example page-no-12 figg-4????? add 
+\end{center}
+\end{solution}
+
+\begin{exam*}
+A diservate-time signal $x(\rmn)$ is shown in Fig??? below. Skecth ${(\rm a)} x(-\rmn)$ ${(\rm b)} x(2-\rmn)$ ${(\rm b)} x(-\rmn-2)$, Also write the functional representation for each of them. $x(\rmn)$
+\begin{center}
+chap1 example page-no-13 figg-1????? add 
+\end{center}
+\end{exam*}
+
+\begin{solution}
+The sketches of the desilined signals are shown in Fig.?? ?? (a), (b) (c) below.
+
+\begin{center}
+chap1 example page-no-13 figg-????? add  numbers of figures 3 add equation manualy
+\end{center}
+\end{solution}
+
+\begin{exam*}
+a discrete-time signal $x(\rmn)$ is shown in Fig.????? below
+\begin{center}
+chap1 example page-no-14 figg-????? add 1
+\end{center}
+
+\begin{tabular}{>{$}l<{$}@{\;}>{$}c<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+\text{sketch} : & {\rm (a)}\quad 2x(\rmn-2) & {\rm (b)}\quad 3-x(\rmn) & {\rm (c)}\quad 2x(-2+\rmn) & {\rm (d)}\quad 1+2x(-24\rmn)
+\end{tabular}
+\end{exam*}
+
+
+\begin{solution}
+The sketch are shown in Fig.???? a, b,c, d below.
+
+\begin{center}
+chap1 example page-no-14 figg-????? add 4 figures 
+\end{center}
+\end{solution}
+
+\begin{exam*}
+Sketch the signals
+\begin{align*}
+x(\rmn) &=1 \quad ;  \quad -1 \leq \rmn \leq 3\\
+&=\frac{1}{2} \quad ;  \quad \rmn=4\\
+&=0 \quad ;  \quad \text{else where}\\[0.1cm]
+\text{and} \quad  \rmy(\rmn) &= \frac{1}{2}\rmn \quad ;  \quad |\rmn|\leq 4\\
+&=0 \qquad ;  \quad \text{else where}
+\end{align*}
+\begin{tabular}{>{$}l<{$}@{\;}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}@{\hspace{0.5cm}}>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+\text{sketch} : & {\rm (a)}\quad 2x(2\rmn) & {\rm (b)}\quad x(\rmn-1)\delta(\rmn-3) & {\rm (c)}\quad \frac{1}{2}x(\rmn)+ \frac{1}{2}(-1)^{\rmn} x(\rmn) \\[0.1cm]
+                & {\rm (d)}\quad \rmy(-\rmn)\rmu(\rmn)+ \rmy(\rmn) & {\rm (e)}\quad x(\rmn + 2)\rmy(1-2\rmn) & {\rm (f)}\quad x(1-\rmn)\rmy(\rmn + 4)
+\end{tabular}
+\end{exam*}
+
+\begin{solution}
+The sketch of $x(\rmn)$ and $\rmy(\rmn)$  are shown in Fig..??? a \& b below
+
+\begin{center}
+chap1 example page-no-15 figg-????? add 2 figures 
+\end{center}
+\end{solution}
+
+\begin{solution}
+The sketch of all the signals are shown in Fig.???? a,b,c,d,e, \& f below.
+\begin{center}
+chap1 example page-no-15 figg-????? add 6 figures 
+\end{center}
+\end{solution}
+
+
+\section*{(Representation and Operations on signals)}
+
+\textbf{EXERCISES}
+\begin{itemize}
+\item[{\rm(1)}]  For the continuous-time shown in Fig??? below. Skecth
+\begin{itemize}
+\item[{\rm(a)}] \quad $x(\rmt) \cdot \rmu(1-\rmt)$
+
+\item[{\rm(b)}]\quad $x(\rmt)[\rmu(\rmt)-\rmu(\rmt-1)]$
+
+\item[{\rm(c)}]\quad $x(\rmt)\delta(\rmt-\frac{3}{2})$
+\end{itemize}
+
+\begin{center}
+chap1 example page-no-16 figg-????? add 1 
+\end{center}
+
+\begin{ans}
+chap1 example page-no-16 figg-????? add 3figures 
+\end{ans}
+
+
+\item[{\rm (2)}] Sketch teh signal
+
+\begin{tabular}{>{$}l<{$}@{\hspace{1cm}}>{$}l<{$}}
+{\rm (a)}\quad \rma(\rmt) = \rmu(-2\rmt+1) & {\rm (b)}\quad \rmb(\rmt) = \rmu(-2\rmt-1)\\[0.1cm]
+{\rm (c)}\quad \rmc(\rmt) = \rmu(\rmt)-2\rmu(\rmt-1)+\rmu(\rmt-\rmz) & {\rm (d)}\quad \rmd(\rmt)= (\rmt)-\rmb(\rmt)\\[0.1cm]
+{\rm (e)}\quad \rme(\rmt) = \dfrac{\dc(\rmt)}{\dt} &
+\end{tabular}
+\begin{ans}
+chap1 example page-no-17 figg-????? add 5figures 
+\end{ans}
+
+\item[{\rm(3)}] Sketch the signal
+
+\begin{tabular}{>{$}l<{$}@{\hspace{0.3cm}}>{$}l<{$}>{$}l<{$}}
+{\rm (a)}\quad \rma(\rmt) = \rmr(3\rmt) & {\rm (b)}\quad \rmb(\rmt) = \rmu(-3\rmt) & {\rm (c)}\quad \rmc(\rmt) = \rmr(3\rmt+1)\\[0.1cm]
+  {\rm (d)}\quad \rmd(\rmt)= \rmr(-3\rmt-1) & {\rm (e)}\quad \rme(\rmt) =\rmr(\rmt)-2\rmr(\rmt-1)+ \rmr(\rmt-2) &{\rm (d)}\quad \rmf(\rmt) = \dfrac{\de(\rmt)}{\dt} 
+\end{tabular}
+\begin{ans}
+chap1 example page-no-18 figg-????? add 6figures 
+\end{ans}
+
+\item[{\rm(4)}] Sketch the following signal
+\begin{itemize}
+\item[{\rm(a)}] $\rma(\rmt) = \rmr(\rmt)-\rmr(\rmt-1)-\rmu(\rmt-1)$.
+
+\item[{\rm(b)}] $\rmb(\rmt) = \rmu(\rmt)+ \rmr(\rmt)-2\rmr(\rmt-1)+ \rmr(\rmt-1)-\rmu(\rmt-2)$
+
+\item[{\rm(c)}] $\rmc(\rmt) = -\rmu(\rmt+1) + \rmr(\rmt+1)-\rmr(\rmt-1)-\rmu(\rmt-1)$
+
+\item[{\rm(d)}] $\rmd(\rmt) = \dfrac{\dc(\rmt)}{\dt}$ 
+ \end{itemize}
+\begin{ans}
+chap1 example page-no-19 figg-????? add 4figures 
+\end{ans}
+
+\item[{\rm (5)}] Evaluate the following integrals.
+\begin{itemize}
+\item[{\rm(a)}] $\int\limits_{-\infty}^{\infty}(\rmt^{2} + \cos\pi \rmt) \delta(\rmt-1)\dt$.
+
+\item[{\rm(b)}] $\int\limits_{0}^{2\pi}\rmt\sin\dfrac{\rmt}{2}\delta(\pi-\rmt)\dt$.
+
+\item[{\rm(c)}] $\int\limits_{-\infty}^{\infty} \delta(2\rmt-2)\dt$
+
+\item[{\rm(d)}] $\int\limits_{-\infty}^{\infty} \rme^{-\rmt}\delta'(\rmt)\dt$
+\end{itemize}
+\begin{ans}
+\begin{tabular}{>{$}l<{$}>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+{\rm (a)} \quad 0 &{\rm (b)} \quad \pi & {\rm (c)}\quad \dfrac{1}{2\rme} & {\rm (e)}\quad 1   
+\end{tabular}
+\end{ans}
+
+\begin{exam*}
+A continuous-time signals $x(\rmt)$ and $\rmy(\rmt)$ are shown in Fig.????? below.  Sketch
+
+\begin{tabular}{>{$}l<{$}>{$}l<{$}>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+{\rm (a)}\quad x(\rmt+2) & {\rm (b)}\quad x\left(2-\dfrac{\rmt}{3}\right) & {\rm (c)}\quad 4\rmy\left(\dfrac{\rmt}{4}\right) & {\rm (d)}\quad \dfrac{1}{2}\rmy(\rmt)\rmu(\rmt) + \rmy(-\rmt)\rmu(\rmt)\\[0.3cm]
+{\rm (e)}\quad x(1-\rmt)\rmy(\rmt-1) & {\rm (f)}\quad x(1-\rmt)\rmy(\rmt-1) & & 
+\end{tabular}
+
+chap1 example page-no-21 figg-????? add 2figures 
+\end{exam*}
+
+\begin{ans}
+chap1 example page-no-21 figg-????? add 6figures 
+\end{ans}
+
+\item[{\rm(7)}] A diserete-time signal $x(\rmn)$ is shown in Fig.??????? below. Sketch
+
+\begin{tabular}{>{$}l<{$}>{$}l<{$}}
+{\rm (i)}\quad x(\rmn)[\rmu(\rmn+1)-\rmu(\rmn-3)] & {\rm (ii)}\quad x(\rmn) \delta(\rmn+2)
+\end{tabular}
+
+\begin{ans}
+The sketch are shown in Fig.??? a,\& b below
+
+chap1 example page-no-23 figg-????? add 1figures
+
+$$
+x(\rmn)\delta(\rmn+2)
+$$
+
+chap1 example page-no-23 figg-????? add 1figures
+\end{ans}
+
+\item[{\rm(8)}] A discrete time-signal $x(\rmn)$ is shown in Fig.???? below
+\begin{center}
+chap1 example page-no-24 figg-????? add figures
+\end{center}
+\begin{tabular}{>{$}l<{$}>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+\text{Sketch} \quad  {\rm (a)}\quad 3x(\rmn-2) & {\rm (b)}\quad 2-3x(\rmn) &{\rm (c)}\quad 2x(-\rmn)-4 & {\rm (d)}\quad 1+ 2x(-2+\rmn)
+\end{tabular}
+
+\begin{ans}
+The sketches are shown in Fig.??? a,b,c,\& d below.
+
+\begin{center}
+chap1 example page-no-24 figg-????? add 2figures
+\end{center}
+\end{ans}
+\end{itemize}
+
+\section{CLASSIFICATION OF SIGNALS}\label{chap1-sec-1.6}
+
+The different methods of classifying signals based on different features are,
+\begin{itemize}
+\item[{\rm(i)}] Continuous-time and Discrete-time signals
+
+\item[{\rm(ii)}] Even and Odd-signals
+
+\item[{\rm(iii)}] Periodic and Non-periodic signals
+
+\item[{\rm(iv)}] Deterministic and Ramdom signals
+
+\item[{\rm(v)}] Energy and Power signals.
+\end{itemize}
+
+\subsection{Continuous-time and Discrete-time signals}\label{chap1-subset-1.6.1}
+
+The difference between continuous-time signal and discrete-time signal is already explained in section \ref{chap1-sec-1.1}
+
+\subsection{Even and Odd signals}\label{chap1-subset-1.6.2}
+
+A continuous-time signal $x(\rmt)$ is said to be an even signal if it satisfies the condition $x(\rmt)= x(\rmt)$ for all `$\rmt$' and it is and it ios said to be an odd signal if it satisfies the condition $x(-\rmt)=-x(\rmt)$ for all `$\rmt$'.
+
+Similarly, a discrete-time signal $x(\rmn)$ is said to be an \textit{even} signal if it satifies the condition $x(-\rmn) = x(\rmn)$ for all `$\rmn$' and it is said to be and \textit{odd} signal if it satasfies the condition  $x(-\rmn)=-x(\rmn)$ for all `$\rmn$'.
+
+Even signals are symmetrical about the vertical axis or the time origin whereas odd signals are antisymmetric about the vertical axis or the time origin.
+
+The above definition of even and odd signal holds good for only real valued signals. But complex valued signals are charaterized by conjugate symmetry.
+
+A complex valued signal $x(\rmt)$ is said to be \textit{conjugate symmetric} if it satisfies the condition
+\begin{equation}\label{chap1-eq-1.42}
+x(-\rmt) =x^{*}(\rmt)
+\end{equation}
+where `*' denotes complex conjugation.
+
+Let
+\begin{equation}\label{chap1-eq-1.43}
+x(\rmt)= x_{\rmR}(\rmt) + \rmj x_{1}(\rmt)
+\end{equation}
+where $x_{\rmR}(\rmt)$ is the real part of $x(\rmt)$, $x_{1}(\rmt)$ is imaginary part of $x(\rmt)$ and $\rmj = \sqrt{-1}$.
+Then complex conjugate of $x(\rmt)$ is.
+\begin{equation}\label{chapp1-eq-1.44}
+x^{*}(\rmt) = x_{\rmR}(\rmt)-\rmj x_{1}(\rmt)
+\end{equation}
+
+{\it\bfseries  Decomposition of a signal:}
+
+A continuous-time signal $x(\rmt)$ can be decomposed into a sum of two signals, one of which is even $x_{\rmc}(\rmt)$ the other is odd $x_{\rmo}(\rmt)$ such that
+\begin{equation}\label{chap1-eq-1.45}
+x(\rmt) = x_{\rmc}(\rmt) + x_{\rmo}(\rmt)
+\end{equation}
+
+For $x_{\rmc}(\rmt)$ to be even,
+\begin{equation}\label{chap1-eq-1.46}
+x_{\rmc}(-\rmt)=x_{\rmc}(\rmt)
+\end{equation}
+and $x_{\rmo}(-\rmt)$ to be odd,
+\begin{equation}\label{chap1-eq-1.47}
+x_{\rmo}(-\rmt)=-\rmx_{\rmo}(\rmt)
+\end{equation}
+
+Substituting $\rmt=-\rmt$ in eqn. \ref{chap1-eq-1.45} we get,
+\begin{align}
+x(-\rmt) &=x_{\rmc}(-\rmt)+ x_{\rmo}(-\rmt)\nonumber\\
+x(-\rmt) &=x_{\rmc}(\rmt)- x_{\rmo}(\rmt)\label{chap1-eq-1.48}
+\end{align}
+
+Solving for $x_{\rmc}(\rmt)$ and $x_{\rmo}(\rmt)$ eqn. \ref{chap1-eq-1.45} and \ref{chap1-eq-1.48} we get,
+\begin{align}
+x_{\rmc}(\rmt) &= \frac{1}{2}[x(\rmt)+ x(-\rmt)]\label{chap1-eq-1.49}\\
+\& \quad x_{\rmo}(\rmt) &=\frac{1}{2}[x(\rmt)- x(-\rmt)]\label{chap1-eq-1.50}
+\end{align}
+
+Similarly, a discrete-time signal $x(\rmn)$ can be decomposed into a sum of two signals, one of which is even $x_{\rmc}(\rmn)$ and the other is odd $x_{\rmo}(\rmn)$ such that,
+\begin{align}
+x(\rmn) &= x_{\rmc}(\rmn)+ x_{\rmo}(\rmn)\label{chap1-eq-1.51}\\
+\text{where} \quad x_{\rmc}(\rmn) &= \frac{1}{2}[x(\rmn) + x(-\rmn)]\label{chap1-eq-1.52}\\
+\text{and} \quad x_{\rmo}(\rmn) &= \frac{1}{2}[x(\rmn)-x(-\rmn)]\label{chap1-eq-1.53}
+\end{align}
+
+%%%%%\example-2%%%%%%%%%%%%%
+
+\begin{exam*}
+Find the even and odd components of the following continuous-time signals.
+
+\medskip
+\begin{tabular}{>{$}l<{$}>{$}l<{$}}
+{\rm (a)}\quad x(\rmt)=\rmu(\rmt) & {\rm(b)}\quad x(\rmt) = 1+\rmt + 3\rmt^{2}+5\rmt^{3} + 9\rmt^{4}\\[0.1cm]
+{\rm (c)}\quad x(\rmt)=(1+ \rmt^{3})\cos^{10}(\rmt) & {\rm(d)}\quad x(\rmt)= \cos(\rmt)+ \sin(\rmt) + \sin(\rmt)\cos(\rmt)\\[0.1cm]
+{\rm (e)}\quad x(\rmt) = \rmA e^{-\alpha \rmt}\rmu(\rmt) & {\rm(f)}\quad x(\rmt) = e^{-2\rmt}\cos(\rmt)\\[0.1cm]
+{\rm (g)}\quad x(\rmt)=\sin \rmc(\rmt) & {\rm (h)}\quad x(\rmt) = \rmt(2-\rmt^{2})(1+4\rmt^{2})\\[0.1cm]
+{\rm (i)}\quad x(\rmt)= \dfrac{2\rmt^{2}-3\rmt+6}{1+ \rmt} & {\rm (j)}\quad x(\rmt)=e^{\rmj \rmt}
+\end{tabular}
+\end{exam*}
+
+\begin{solution}
+\begin{itemize}
+\item[{\rm(a)}]
+\begin{align*}
+\text{Given~:} \quad x(\rmt)&= \rmu(\rmt)\\
+                     x(-\rmt)&= \rmu(-\rmt)
+\end{align*}
+i.e., $x_{\rme}(\rmt) = \dfrac{1}{2}[x(\rmt) + x(-\rmt)] = \dfrac{1}{2}[\rmu(\rmt)+ \rmu(-t)]$
+
+The plot of $x_{\rme}(\rmt)$ is shown in Fig.??? below
+\begin{center}
+chap1 -examp2  fig ????? add page-1
+\end{center}
+$$
+x_{\rmo}(\rmt) = \dfrac{1}{2}[x(\rmt)-x(-\rmt)] = \dfrac{1}{2}[\rmu(\rmt)-\rmu(-\rmt)]
+$$
+
+
+The plot of $x_{\rmo}(\rmt)$ is shown in Fig. ??? below
+\begin{center}
+chap1 -examp2  fig ????? add page-1
+\end{center}
+
+\item[{\rm (b)}]
+\begin{align*}
+\text{Given~:} \quad x(\rmt) &= 1+ \rmt + 3 \rmt^{2} + 5\rmt^{2} +9\rmt^{4}\\
+               \therefore x+1 &= 1+(-\rmt)+ 3(\rmt)^{2} + 5(\rmt)^{3} + 9(\rmt)^{4}\\
+                              &=1-\rmt + 3(\rmt)^{2}-5\rmt^{3} + 9\rmt^{4}\\[0.3cm]
+        \therefore x_{\rme}(\rmt) &= \dfrac{1}{2}[x(\rmt) + x(-\rmt)]\\
+                           &=1 + 3\rmt^{2} + 9\rmt^{4}\\[0.3cm]
+        \therefore x_{\rmo}(\rmt) &= \dfrac{1}{2} [x(\rmt)-x(-\rmt)]\\
+                                  &= \rmt+ 5\rmt^{3}.                           
+\end{align*}
+
+\item[{\rm (c)}]
+\begin{align*}
+\text{Given~:} \quad x(\rmt)&= (1 + \rmt^{3}) \cos^{10}(\rmt)\\
+\therefore x(\rmt) &= (1 + \rmt^{3}) \cos^{10}(-\rmt)\\
+&=(1-\rmt^{3}) \cos^{10}(\rmt)\\[0.3cm]
+\therefore x_{\rme}(\rmt) &= \dfrac{1}{2}[x(\rmt)+ x(-\rmt)]\\
+ &= \cos^{10}(\rmt)\\[0.3cm]
+x_{\rmo}(\rmt) &= \dfrac{1}{2}[x(\rmt) + x(-\rmt)]\\
+ &= \rmt^{3} \cos^{10}(\rmt) 
+\end{align*}
+
+\item[{\rm (d)}]
+\begin{align*}
+\text{Given~:} x(\rmt) &= \cos(\rmt) + \sin(\rmt) + \sin(\rmt) \cos(\rmt)\\
+\therefore x(-\rmt) &= \cos(-\rmt) + \sin(-t)+ \sin(-\rmt) \cos(-\rmt)\\
+ &= \cos(\rmt) -\sin(\rmt) -\sin(\rmt) \cos(\rmt)\\[0.3cm]
+\therefore x_{\rme}(\rmt) &= \dfrac{1}{2}[x(\rmt) + x(-\rmt)]\\
+&= \cos(\rmt)\\[0.3cm]
+x_{\rmo}(\rmt) &= \dfrac{1}{2}[x(\rmt)=x(-\rmt)]\\
+&= \sin(\rmt)-\sin(\rmt)\cos(\rmt)\\
+&=\sin(\rmt)[1-\cos(\rmt)]
+\end{align*}
+
+
+\item[{\rm (e)}] Given~: \quad $x(\rmt) =\rmA e^{-\alpha \rmt} \rmu(\rmt)$
+
+This $x(\rmt)$ each also be expressed as,
+\begin{align*}
+x(\rmt) &= \rmA e^{-\alpha \rmt} \quad;  t > 0\\
+        &= 0 \quad ; t < 0\\[0.2cm]
+\therefore x(-\rmt) &= \rmA e^{-\alpha(-\rmt)} =\rmA e^{\alpha \rmt}; -\rmt \leq 0 \rightarrow  \rmt < 0\\
+                    &=0  \qquad\qquad \qquad; -\rmt < 0 \Rightarrow \rmt > 0
+\end{align*}
+\begin{align*}
+\therefore x_{\rme}(\rmt)= \dfrac{1}{2}[x(\rmt) + x(-\rmt)] &= \dfrac{1}{2}\rmA e^{-\alpha \rmt} \quad ; \rmt > 0\\
+ &= \dfrac{1}{2}\rmA e^{-\alpha \rmt} \quad ; \rmt > 0\\
+ &=\dfrac{1}{2}\rmA e^{-\alpha |\rmt|}\\[0.3cm]
+ \& \quad x_{\rmo}(\rmt)=\dfrac{1}{2}[x(\rmt)-x(-\rmt)] &= \dfrac{1}{2}\rmA e^{-\alpha \rmt} \quad ; \rmt > 0\\
+ &= -\dfrac{1}{2}\rmA e^{-\alpha (-\rmt)} = \dfrac{-1}{2} \rmA e^{\alpha \rmt} \quad ; \rmt < 0
+\end{align*}
+
+The plot of $x(\rmt)$, $x_{\rmt}(\rmt)$ and $x_{\rmo}(\rmt)$ are shown in Fig.??? below.
+\begin{center}
+chap1 exampl1-2 figg??? page-3
+\end{center}
+
+\item[{\rm (f)}] Given :
+\begin{align*}
+x(\rmt) &= e^{-2\rmt} \cos(\rmt)\\
+\therefore x(\rmt) &= e^{-2(-\rmt)} \cos(-\rmt) = e^{2\rmt}\cos(\rmt)
+\end{align*}
+\begin{align*}
+ &= \dfrac{1}{2}[x(\rmt) + x(-\rmt)]\\
+ x_{e}(\rmt) &= \dfrac{1}{2}\left[e^{-2\rmt}\cos(\rmt) + e^{2\rmt}\cos(\rmt)\right]\\
+ &= \cos(\rmt)\left[\dfrac{e^{2\rmt}+ e^{2\rmt}}{2}\right]\\
+ &= \cos(\rmt)\cosh(\rmt)\\[0.3cm]
+ \&\quad x_{\rmo}(\rmt)&= \dfrac{1}{2}\left[x(\rmt)-x(-\rmt)\right]\\
+ &=\dfrac{1}{2}\left[e^{-2\rmt}\cos(\rmt)-e^{2\rmt}\cos(\rmt)\right]\\
+ &=\cos(\rmt)\left[\dfrac{e^{2\rmt}-e^{-2\rmt}}{2}\right]\\
+ &=-\cos(\rmt) \sin \rmh(\rmt)
+\end{align*}
+
+\item[{\rm (g)}] Given: $x(\rmt) =\sin\rmc(\rmt)$
+\begin{flalign*}
+\text{Since $(\rmt)$ function is defined as} \sin\rmc(\rmt) &= \dfrac{\sin(\pi\rmt)}{\pi\rmt}&\\
+\therefore x(-\rmt) = \sin\rmc(-\rmt) = \dfrac{\sin(-\pi\rmt)}{-\pi\rmt} &= \dfrac{\sin(\pi\rmt)}{\pi\rmt} = \sin\rmc(\rmt)\\
+\therefore x_{\rme}(\rmt) &= \sin\rmc(\rmt)\\
+\&\qquad x_{\rmo}(\rmt) &= 0
+\end{flalign*}
+
+\item[{\rm (h)}] Given:
+\begin{align*}
+x(\rmt)  &= \rmt(2-\rmt^{2})(1 + 4\rmt^{2})\\
+x(-\rmt) &= -\rmt(2-(-\rmt)^{2})(1+ 4\rmt^{2})\\
+         &= -\rmt(2-\rmt^{2})(1+ 4\rmt^{2})\\
+\therefore x_{\rme}(\rmt)&=\dfrac{1}{2}[x(\rmt) + x(-\rmt)]\\
+           &=0\\[0.3cm]
+ \& x_{\rmo}(\rmt) &= \dfrac{1}{2}[x(\rmt)-x(-\rmt)]\\
+            &=\rmt(2-\rmt^{2})(1+ 4\rmt^{2})
+\end{align*}
+
+\item[{\rm(i)}] Given:
+\begin{align*}
+x(\rmt) &= \dfrac{2\rmt^{2}-3\rmt+6}{1+ \rmt}\\
+\therefore x(-\rmt) &= \dfrac{2\rmt^{2}+ 3\rmt + 6}{1-\rmt}\\
+\therefore x_{\rme}(\rmt) &= \dfrac{1}{2}\left[\dfrac{2\rmt^{2}-3\rmt+6}{1+ \rmt}+ \dfrac{2\rmt^{2}+ 3\rmt+6}{1-\rmt}\right]\\
+&= \dfrac{5\rmt^{2}+6}{1-\rmt^{2}}\\[0.3cm]
+\&\qquad x_{\rmo}(\rmt) &= \dfrac{1}{2}\left[\dfrac{2\rmt^{2}-3\rmt+6}{1+ \rmt} -\dfrac{2\rmt^{2}+ 3\rmt + 6}{1-\rmt}\right]\\
+&=\dfrac{-2\rmt^{3}-9\rmt}{1-\rmt^{2}}
+\end{align*}
+
+\item[{\rm (j)}]Given:
+\begin{align*}
+x(\rmt) &= e^{\rmj \rmt}\\
+\therefore x(-\rmt) &= e^{-\rmj \rmt}
+\end{align*}
+\begin{align*}
+x_{\rme}(\rmt) &= \dfrac{1}{2}[x(\rmt)+ x(-\rmt)]\\
+&=\dfrac{1}{2}\left[e^{\rmj\rmt} + e^{-\rmj\rmt}\right]\\
+&=\cos(\rmt)\\[0.3cm]
+\& \qquad x_{\rmo}(\rmt) &= \dfrac{1}{2}[x(\rmt)-x(-\rmt)]\\
+                         &=\dfrac{1}{2}\left[e^{\rmj\rmt}-e^{-\rmj\rmt}\right]  
+\end{align*}
+\end{itemize}
+\end{solution}
+
+\begin{exam*}
+Detemine and sketch the even and odd component the signal $x(\rmt)$ shown in fig??? below.
+\begin{center}
+chap1 example2  fig????? page-no-6 
+\end{center}
+\end{exam*}
+\begin{solution}
+\begin{center}
+chap1 example2  fig????? page-no-6 
+\end{center}
+
+Add $x(\rmt)$ and $x(-\rmt)$ , we get, 
+\begin{center}
+chap1 example2  fig????? page-no-6 
+\end{center}
+
+The even component of $x(\rmt)$ is shown in Fig??? below.
+\begin{center}
+chap1 example2  fig????? page-no-6 
+\end{center}
+
+The odd component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-6 
+\end{center}
+\end{solution}
+
+\begin{exam*}
+Sketch the even and odd component of the signal $x(\rmt)$ shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-7 
+\end{center}
+\end{exam*}
+\begin{solution}
+\begin{center}
+chap1 example2  fig????? page-no-7 
+\end{center}
+
+Adding $x(\rmt)$ and $x(-\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-7 
+\end{center}
+
+The even component of $x(\rmt)$ is shown in Fig.?? below.
+\begin{center}
+chap1 example2  fig????? page-no-7 
+\end{center}
+
+Subtraction $x(-\rmt)$ from $x(\rmt)$, we get,
+\begin{center}
+chap1 example2  fig????? page-no-7 
+\end{center}
+
+The odd component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-7 
+\end{center}
+\end{solution}
+
+\begin{exam*}
+Sketch the even and odd component of the signal in Fig..??? below
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+\end{exam*}
+\begin{solution}
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+
+Adding $x(\rmt)$ and $x(-\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+
+The even component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+
+Subtraction $x(-\rmt)$ from $ x(\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+
+The odd component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+\end{solution}
+
+
+\begin{exam*}
+Sketch the even and odd component of the signal $x(\rmt)$ show in Fig..??? below
+\begin{center}
+chap1 example2  fig????? page-no-8 
+\end{center}
+\end{exam*}
+\begin{solution}
+\begin{center}
+chap1 example2  fig????? page-no-9 
+\end{center}
+
+Adding $x(\rmt)$ and $x(-\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-9 
+\end{center}
+
+The even component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-9 
+\end{center}
+
+Subtraction $x(-\rmt)$ from $ x(\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-9 
+\end{center}
+
+The odd component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-9 
+\end{center}
+\end{solution}
+
+
+\begin{exam*}
+Sketch the even and odd component of the signal  show in Fig..??? below
+\begin{center}
+chap1 example2  fig????? page-no-10 
+\end{center}
+\end{exam*}
+\begin{solution}
+\begin{center}
+chap1 example2  fig????? page-no-10 
+\end{center}
+
+Adding $x(\rmt)$ and $x(-\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-10 
+\end{center}
+
+The even component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-10 
+\end{center}
+
+Subtraction $x(-\rmt)$ from $ x(\rmt)$, we get
+\begin{center}
+chap1 example2  fig????? page-no-10 
+\end{center}
+
+The odd component of $x(\rmt)$ is shown in Fig.??? below.
+\begin{center}
+chap1 example2  fig????? page-no-10 
+\end{center}
+\end{solution}
+
+\begin{exam*}
+Prove that,
+\begin{itemize}
+\item[{\rm(i)}] $\int\limits_{-\rma}^{\rma}\dt = 2\int\limits_{0}^{\rma}x(\rmt)\dt$ \quad; if $x(\rmt)$ is even.
+
+\item[{\rm(ii)}]  $\int\limits_{-\rma}^{\rma}\dt = 0$ \quad ; if $x(\rmt)$ is odd.
+\end{itemize}
+\end{exam*}
+\begin{solution}
+\begin{itemize}
+\item[{\rm (i)}] To prove $\int\limits_{-\rma}^{\rma}\dt = 2\int\limits_{0}^{\rma}x(\rmt)\dt$ \quad; if $x(\rmt)$ is even.
+\begin{align*}
+\rmL.\rmH.\rmS. &= \int\limits_{-\rma}^{\rma}\dt\\
+       &=\int\limits_{-\rma}^{0}x(\rmt)\dt +\int\limits_{0}^{\rma}x(\rmt)\dt\\
+       &=-\int\limits_{0}^{-\rma}x(\rmt)\dt + \int\limits_{0}^{\rma}x(\rmt)\dt 
+\end{align*}
+Put $\rmt=-\rmt$ in first term, then $\dt =-\dt$
+\begin{align*}
+&=\int\limits_{-\rma}^{0}x(\rmt)\dt +\int\limits_{0}^{\rma}x(\rmt)\dt\\
+&=\int\limits_{0}^{\rma}x(\rmt)\dt + \int\limits_{0}^{\rma}x(\rmt)\dt \qquad [\because x(\rmt) = x(\rmt), x(\rmt)\;
+\text{is even}]\\
+&=2 \int\limits_{0}^{\rma}x(\rmt)\dt\\
+&=\rmR.\rmH.\rmS.
+\end{align*}
+
+\item[{\rm (ii)}] To prov $\int\limits_{-\rma}^{\rma} x(\rmt)\dt =0$ \quad ; if $x(\rmt)$ is odd.
+\begin{align*}
+\rmL.\rmH.\rmS. &= \int\limits_{-\rma}^{\rma}x(\rmt)\dt\\
+                &= \int\limits_{-\rma}^{0}x(\rmt)\dt + \int\limits_{0}^{\rma}x(\rmt)\dt\\
+                &= -\int\limits_{0}^{-\rma}x(\rmt)\dt + \int\limits_{0}^{\rma}x(\rmt)\dt
+\end{align*}
+
+Put $\rmt=-\rmt$ in first term, then $\dt =-\dt$
+\begin{align*}
+&= \int\limits_{0}^{\rma}x(-\rmt)\dt + \int\limits_{0}^{\rma}x(\rmt)\dt\\
+????????????????????
+\end{align*}
+\end{itemize}
+\end{solution}
+
+\begin{exam*}
+Fig.,????  (a) and (b) shown part of the signal $x(\rmt)$ and its even part $x_{\rme}\rmt$ respectively for $\rmt \geq 0$  and even part $x_{e}(\rmt)$ for $\rmt < 0$ not shown . Complete the plots of $x(\rmt)$ and $x_{\rme}(\rmt)$. Also draw the odd part of $x(\rmt)$ [i.e., $x_{\rmo}(\rmt)$].
+\begin{center}
+chap1 example 2 figg??? pageno-12 {2figures}
+\end{center} 
+\end{exam*}
+\begin{solution}
+We know that even part of a signal is symmetrical about $t=0$ Thus, we have that complete even part $x_{\rme}(\rmt)$ as shown in Fig..??? below.
+\begin{center}
+chap1 example 2 figg??? pageno-12 {2figures}
+\end{center} 
+
+We know that $x(\rmt) = x_{\rme}(\rmt)+ x_{\rmo}(\rmt)$
+
+Now, $x_{\rmo}(\rmt)$ for $\rmt \geq 0$ is obtained in such away that if we add $x_{\rme}(\rmt)$ and $x_{\rmo}(\rmt)$ for $\rmt \geq 0$, we must get the given $x(\rmt)$ for $\rmt\geq 0$ shown in Fig.??? below.
+\begin{center}
+chap1 example 2 figg??? pageno-12 
+\end{center} 
+
+If we add the signal shown in Fig/???? (b) and Fig.??? we get $x(\rmt)$ for $\rmt \geq 0$ as shown in Fig/??? (a).
+
+Now, we know that odd part of a signal is antisymmetric about $\rmt=0$. Therefore, the complete $x_{\rmo}(\rmt)$ is shown in Fig..? below.
+\begin{center}
+chap1 example 2 figg??? pageno-12 
+\end{center} 
+
+Now, the complete $x(\rmt)$ is obtained by adding complete $x_{\rme}(\rmt)$ and $x_{\rmo}(\rmt)$ shown in Fig.??? and Fig????. It is shown in Fig.?? below.
+\begin{center}
+chap1 example 2 figg??? pageno-12 
+\end{center} 
+\end{solution}
+
+\begin{exam*}
+Shown that that product of 2 even signals or of 2 odd signals is an even signal and that the product of an even and an odd signal is an odd signal.
+\end{exam*}
+\begin{solution}
+Consider that $x(\rmt)$ is the product of $\rmu_{1}(\rmt)$ and $x_{2}(\rmt)$.
+\begin{align*}
+\text{i.e.,}\quad x(\rmt) &= x_{1}(\rmt), x_{2}(\rmt)\tag{i}\label{chap1-eq-i}\\
+\text{then}\quad x(-\rmt) &=x_{1}(-\rmt), x_{2}(-\rmt)\tag{ii}\label{chap1-eq-ii}
+\end{align*}
+
+If both $x_{1}(\rmt)$ and $x_{2}(\rmt)$ are even, [From eqn.\eqref{chap1-eq-ii}]
+\begin{gather*}
+x(\rmt)=x_{1}(\rmt)\cdot x_{2}(\rmt)= x(\rmt)\\
+\therefore\quad \text{is even signal}
+\end{gather*}
+
+If both $x_{1}(\rmt)$ and $x_{2}(\rmt)$ are odd, [From eqn.\eqref{chap1-eq-ii}]
+\begin{align*}
+x(-\rmt) &=[-x_{1}(\rmt)][-x_{2}(\rmt)]\\
+         &=x_{1}(\rmt)\cdot x_{2}(\rmt)\\
+         &=x(\rmt)
+\end{align*}
+\centering{$\therefore$ \quad $x(\rmt)$ is even signal}
+
+If $x_{1}(\rmt)$ is even and $x_{2}(\rmt)$ is odd, [From equ.\eqref{chap1-eq-ii}]
+\begin{align*}
+x(-\rmt) &=x_{1}(\rmt)[-\rmx_{2}(\rmt)]\\
+         &=-x_{1}(\rmt)\cdot x_{2}(\rmt)\\
+         &=-x(\rmt)
+\end{align*}
+\centering{$\therefore$ \quad $x(\rmt)$ is odd signal}
+\end{solution}
+
+
+{\bfseries  EXERCISES}
+
+\begin{enumerate}[{\rm 1)}]
+\item Find the even and odd components of the following continuous time signal.
+
+\begin{tabular}{>{$}l<{$}>{$}l<{$}}
+{\rm (a)}\quad x(\rmt) = \rmt(2-\rmt)(1+ 4\rmt) & {\rm (b)}\quad x(\rmt) = 20 \cos(40 \pi\rmt-\frac{\pi}{4})\\
+{\rm (c)}\quad  x(\rmt)= \sin(\rmw_{0}\rmt + \frac{\pi}{4}) & {\rm (d)}\quad x(\rmt) = \rme^{-\frac{\rmt}{4}}4(\rmt)\\
+{\rm (e)}\quad x(\rmt)=\sin(5\rmt)\cos(7\rmt) & {\rm (f)}\quad x(\rmt)=\sin(5\rmt)-\cos(7\rmt)
+\end{tabular}
+\begin{ans}
+~
+
+\begin{tabular}{>{$}l<{$}>{$}l<{$}>{$}l<{$}>{$}l<{$}}
+{\rm (a)} & x_{\rme}(\rmt) = 7\rmt^{2} & {\rm (b)} & x_{\rme}(\rmt) = \dfrac{20}{\sqrt{2}}\cos(40\pi\rmt)\\[0.3cm]
+          & x_{\rmo}(\rmt) = \rmt(2-4\rmt^{2}) &    & x_{\rmo}(\rmt) = \dfrac{20}{\sqrt{2}}\sin(40\pi\rmt)\\[0.4cm]
+{\rm (c)} & x_{\rme}(\rmt) = \dfrac{1}{\sqrt{2}}\cos \rmw_{0}\rmt & {\rm (d)} & x_{\rme}(\rmt) =\dfrac{1}{2}\rme^{-\frac{1}{4}|\rmt|}\\[0.3cm]
+          & x_{\rmo}(\rmt) =  \dfrac{1}{\sqrt{2}}\cos \rmw_{0}\rmt &  & x_{\rmo}(\rmt) = \dfrac{1}{2}\rme^{-\frac{1}{4}|\rmt|} \quad ; \rmt > 0\\[0.3cm]
+          &                                                         &  &\qquad\; =\dfrac{1}{2}\rme^{\frac{1}{4}|\rmt|} \quad ; \rmt < 0\\[0.3cm]
+{\rm (e)} & x_{\rme}(\rmt) = 0     & {\rm (f)}& x_{\rme}(\rmt)= -\cos(7\rmt)\\[0.3cm]
+          & x_{\rmo}(\rmt) =\sin(5\rmt)\cdot \cos(7\rmt) & &x_{\rmo}(\rmt)= \sin(5\rmt)                            
+\end{tabular}
+\end{ans}
+
+\item Sketch $x(\rmt)= \rmr(\rmt+2)-\rmr(\rmt+1)-\rmr(\rmt-2)+\rmr(\rmt+3)$ and its even and odd component.
+
+\begin{ans}
+Sketch of $x(\rmt), x_{\rme}(\rmt)$ and $x_{\rmo}(\rmt)$ are known is Fig.????????? \& ??? respectively.
+\begin{center}
+chap1  examplen 2 fig???? pageNo-14
+\end{center}
+\end{ans}
+
+\item Sketch the even and odd component of the following signals.
+
+\begin{center}
+chap1 example 2 figguurte????? 5figures page no15????
+\end{center}
+\begin{ans}
+chap1 example 2 figguurte???? 5figures page 16????
+\end{ans}
+\end{enumerate}
+
+\begin{exam*}
+Sketch the signal $x(\rmt)= \rmr(\rmt+2)-\rmr(\rmt+1)-\rmr(\rmt-2)+ \rmr(????)$ and its even and odd parts.
+\end{exam*}
+\begin{ans}
+The sketch of $x(\rmt)$ is shown in Fig..?? below.
+\begin{center}
+chap1 example 2 figguurte?????  page no17????
+\end{center}
+
+The sketch of $x_{\rme}(\rmt)$ and $x_{\rmo}(\rmt)$ are shown in Fig--? (a)\& (b) below.
+\begin{center}
+chap1 example 2 figguurte?????  page no17????
+\end{center}
+\end{ans}
+
+\begin{exam*}
+Find and plot the even and odd component of the following discrete-time signals.
+
+\begin{tabular}{>{$}l<{$}>{$}l<{$}}
+{\rm (a)} \quad x(\rmn) =\rmu(\rmn) & {\rm (b)}\quad x(\rmn) = 3\rmu(\rmn-2)\\
+{\rm (c)} \quad x(\rmn)= \alpha^{\rmn}\rmu(\rmn) \quad; 0< \alpha < 1 & {\rm (b)}\quad x(\rmn)= \alpha^{\rmn}\rmu(\rmn-3)\quad ; 0 < \alpha < 1\\
+{\rm (e)} \quad x(\rmn) = \rmu(\rmn)-\rmu(\rmu-\rmu) & {\rm (f)}\quad x(\rmn)= \cos\left(\dfrac{2\pi}{2^{\rmn}} \right)\rmu(\rmn)\\
+{\rm (g)} \quad x(\rmn) = \{2,3,4,5,6\} &  \\
+ \hspace{2.8cm}\uparrow & 
+\end{tabular}
+\end{exam*}
+
+\begin{solution}
+\begin{itemize}
+\item[{\rm (a)}] Given: $x(\rmn)=\rmu(\rmn)$  : The plots of $x(\rmn), x_{\rme}(\rmn)$ \& $x_{\rmo}(\rmn)$ are shown in Fig.??? below
+\begin{center}
+chap1 exampl 2 figure ??? page 1-1 
+\end{center}
+
+\item[{\rm (b)}] Given: $x(\rmn)= \rmu(\rmn)$;
+
+The plots of $x(\rmn), x_{\rme}(\rmn)$ \& $x_{\rmo}(\rmn)$ are shown in Fig??? below
+ \begin{center}
+chap1 exampl 2 figures ??? page 1-2 
+\end{center}
+
+\item[{\rm (c)}] Given : $x(\rmn)= \alpha^{\rmn}\rmu(\rmn) ; 0 < \alpha < 1$.
+
+The plots of $x(\rmn), x_{\rme}(\rmn)$ and $x_{\rmo}(\rmn)$ are shown in Fig..??? below.
+\begin{center}
+chap1 exampl 2 figures ??? page 1-3 
+\end{center}
+
+\item[{\rm (d)}] Given : $x(\rmn) = \alpha^{\rmn} \rmu(\rmn-3) ; 0 < \alpha < 1$.
+
+The plots of $x(\rmn), x_{\rme}(\rmn)$ and $x_{\rmo}(\rmn)$ are shown in Fig.???? below.
+\begin{center}
+chap1 exampl 2 figures ??? page 1-4 
+\end{center}
+
+\item[{\rm (e)}] Given : $x(\rmn) =\rmu(\rmn)-\rmu(\rmn-4)$
+
+The plots of $x(\rmn), x_{\rme}(\rmn)$ and $x_{\rmo}(\rmn)$ are shown in Fig.?? below.
+\begin{center}
+chap1 exampl 2 figures ??? page 1-5 
+\end{center}
+
+\item[{\rm (f)}] Given : $x(\rmn) = \cos\left(\dfrac{\pi}{2} \rmn \right)\rmu(\rmn)$
+
+The plots of $x(\rmn), x_{\rme}(\rmn)$ and $x_{\rmo}(\rmn)$ are shown in Fig.,?? below
+\begin{center}
+chap1 exampl 2 figures ??? page 1-6 
+\end{center}
+
+\item[{\rm (g)}]Given :
+\begin{align*}
+x(\rmn) &= \{2,3,4,5,6\}\\
+        & \qquad \quad \;\uparrow
+\end{align*}
+
+The plots of $x(\rmn), x_{\rme}(\rmn)$ and $x_{\rmo}(\rmn)$ are shown in Fig.??? below.
+\begin{center}
+chap1 exampl 2 figures ??? page 1-7 
+\end{center}
+\end{itemize}
+\end{solution}
 \label{1end}
